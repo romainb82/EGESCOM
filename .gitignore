@@ -1,0 +1,4 @@
+# JetBrains IDE
+.idea/
+
+# git config --global http.sslVerify false

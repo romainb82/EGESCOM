@@ -1,0 +1,149 @@
+{% extends "_template_widget.html.twig" %}
+
+{% block title %}Widget Liste Utilisateurs Altassian{% endblock %}
+{% block css %}{% endblock %}
+{% block style %}{% endblock %}
+{% block content %}
+
+
+    <article class="slds-card slds-m-around_xx-small">
+        <div class="slds-card__header slds-grid">
+            <header class="slds-media slds-media_center slds-has-flexi-truncate">
+                <div class="slds-media__figure">
+                <span class="slds-icon_container null slds-icon__svg--default">
+                    <svg class="slds-icon slds-icon-text-default test-class" aria-hidden="true">
+                        <use xlink:href="/app/public/assets/icons/utility-sprite/svg/symbols.svg#list"></use>
+                    </svg>
+                </span>
+                </div>
+                <div class="slds-media__body">
+                    <h2 class="slds-card__header-title">
+                        <span class="slds-card__header-link slds-truncate" title="Detail des zones">Liste des utilisateurs et le graphique correspondant</span>
+                    </h2>
+                </div>
+                <div class="slds-no-flex">
+                    <button class="slds-button slds-button_icon slds-button_icon-border-filled" id="bt-toogle">
+                        <svg class="slds-button__icon" aria-hidden="true" id="icon-toogle">
+                            <use xlink:href="/app/public/assets/icons/utility-sprite/svg/symbols.svg#chevronup"></use>
+                        </svg>
+                        <span class="slds-assistive-text">Open</span>
+                    </button>
+                </div>
+            </header>
+        </div>
+
+        <div class="slds-card__body slds-card__body_inner" id="content-toogle">
+            <table id="user">
+                <thead>
+                <tr>
+                    <th>Nom Prénom Utilisateur</th>
+                    <th>Temps  passé sur les tickets JIRA en heure</th>
+                </tr>
+                </thead>
+                <tbody>
+                    {% for value in table %}
+                    <tr>
+                        <td>
+                            {# Affichage des utilisateurs et chargement du deuxième widget quand l'utilisateur est choisi #}
+                            <a href = "/app/widgets/informatique/Altassian/widgetListeProjetUtilisateur/{{ value.idU }}?nameUser={{ value.nameUser }}" target="widgetListeProjet" >{{ value.assignement }}</a>
+                        <td>
+                            {# Condition pour savoir si le temps saisie dans JIRA eset rempli ou non #}
+                            {% if value.time == 0 %}
+                                Aucun temps défini
+                            {% else %}
+                                {{ (value.time / 3600)|round(1, 'floor') }} h
+                            {% endif %}
+                        </td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+        <div id="chartcontainer" class="slds-p-horizontal_x-small"></div>
+
+        </div>
+    </article>
+
+
+{% endblock %}
+{% block js %}{% endblock %}
+{% block script %}
+
+    <script>
+
+        var bt_toogle = document.getElementById('bt-toogle');
+        var content_toogle = document.getElementById('content-toogle');
+        var icon_toogle = document.getElementById('icon-toogle');
+        bt_toogle.onclick = function () {
+            var result = content_toogle.classList.toggle('slds-is-collapsed');
+            if (result) {
+                icon_toogle.getElementsByTagName("use")[0].setAttribute('href', '/app/public/assets/icons/utility-sprite/svg/symbols.svg#chevrondown');
+            } else {
+                icon_toogle.getElementsByTagName("use")[0].setAttribute('href', '/app/public/assets/icons/utility-sprite/svg/symbols.svg#chevronup');
+            }
+        }
+
+        $(document).ready( function () {
+        } );
+
+        const table = $('#user').DataTable({
+                "language": {
+                    "url": "/app/public/datatables/French.json",
+                },
+            "pageLength": 25
+            });
+
+        var data = table.rows().data();
+        var tabLabel = [];
+        var tabTemps =[];
+
+        //Recuperation du nom et du temps de chaque utilisateur présent dans la dataTable
+        for(var i=0 ; i < data.length;i++){
+            tabLabel.push(data[i][0]);
+
+            tabTemps.push(parseFloat(data[i][1]))
+        }
+        {# Mise en Place d'un graphique en fonction de la DataTable #}
+        const container = document.getElementById('chartcontainer');
+
+        const chart2 = Highcharts.chart(container, {
+            chart: {
+                type: 'bar'
+            },
+            title: {
+                text: 'Graphique représentant le temps passé sur les tickets par Utilisateur'
+            },
+            xAxis: {
+                categories: tabLabel,
+                title: {
+                    text: "Utilisateur JIRA"
+                }
+            },
+            yAxis: {
+                title: {
+                    text: 'Temps Passé en heure',
+                    align: 'high'
+                },
+
+
+                labels: {
+                    overflow: 'justify'
+                }
+            },
+            plotOptions: {
+                bar: {
+                    dataLabels: {
+                        enabled: true,
+                        format: '{y} h'
+                    },
+                    enableMouseTracking: false
+                }
+            },
+            series: [{
+                name: "" ,
+                color: '#709f0a',
+                data: tabTemps
+            }]
+        });
+    </script>
+{% endblock %}

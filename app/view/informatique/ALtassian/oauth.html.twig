@@ -1,0 +1,48 @@
+{% extends "_template.html.twig" %}
+
+{% block title %}{{ systemTableName }}{% endblock %}
+
+{% block content %}
+    {% set widgetlisteUser = '/app/widgets/informatique/Altassian/widgetlisteUser'  %}
+    {% set widgetListeProjet = '/app/widgets/informatique/Altassian/widgetListeProjet'  %}
+    {% set widgetTempoUsers = '/app/widgets/informatique/Altassian/tempo/users'  %}
+    <html>
+        <div class="slds-col">
+            <div class="slds-grid slds-wrap">
+                <div class="slds-col slds-size_1-of-1 slds-medium-size_12-of-12 slds-large-size_12-of-12">
+                    <span>
+                        <button class="button" onclick="oauth2_login()">Oauth2 Login</button><br>
+                        <br><div id="logs"></div>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </html>
+
+{% endblock %}
+{% block script %}
+
+    function ini(){
+        AppLauncher();
+    }
+
+    function oauth2_login() {
+        $.oauth2({
+            auth_url: 'https://auth.atlassian.com/authorize',
+            response_type: 'code',
+            token_url: 'https://auth.atlassian.com/oauth/token',
+            client_id: 'U7njO44lGz4mVu5lJEGQYVKAcFKo04Up',
+            client_secret: 'QT1RagQqiaLcCCrPXTNAvAI3rJOYghu9nK_AFw-drsSuOyR9I1nyKN4Th1KK4B_s',
+            redirect_uri: 'https://oauth.pstmn.io/v1/callback',
+            other_params: {scope:'read:me', prompt:'consent', audience:'api.atlassian.com'}
+        }, function(token, response){
+            $("#logs").append("<p class='success'><b>access_token: </b>"+token+"</p>");
+            $("#logs").append("<p class='success'><b>response: </b>"+JSON.stringify(response)+"</p>");
+        }, function(error, response){
+            $("#logs").append("<p class='error'><b>error: </b>"+JSON.stringify(error)+"</p>");
+            $("#logs").append("<p class='error'><b>response: </b>"+JSON.stringify(response)+"</p>");
+        });
+    }
+
+{% endblock %}
+

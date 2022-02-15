@@ -1,0 +1,673 @@
+﻿[
+  {
+    "self": "https://proapro.atlassian.net/rest/api/3/user?accountId=5df87e93a0602c0cabdceb7f",
+    "accountId": "5df87e93a0602c0cabdceb7f",
+    "accountType": "atlassian",
+    "avatarUrls": {
+      "48x48": "https://secure.gravatar.com/avatar/d860c7db958bdb2f2e226a4c19127162?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FAB-1.png",
+      "24x24": "https://secure.gravatar.com/avatar/d860c7db958bdb2f2e226a4c19127162?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FAB-1.png",
+      "16x16": "https://secure.gravatar.com/avatar/d860c7db958bdb2f2e226a4c19127162?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FAB-1.png",
+      "32x32": "https://secure.gravatar.com/avatar/d860c7db958bdb2f2e226a4c19127162?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FAB-1.png"
+    },
+    "displayName": "Aurélien Boisselet",
+    "active": true,
+    "locale": "fr_FR"
+  },
+  {
+    "self": "https://proapro.atlassian.net/rest/api/3/user?accountId=5d53f3cbc6b9320d9ea5bdc2",
+    "accountId": "5d53f3cbc6b9320d9ea5bdc2",
+    "accountType": "app",
+    "avatarUrls": {
+      "48x48": "https://secure.gravatar.com/avatar/40cff14f727dbf6d865576d575c6bdd2?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FJO-4.png",
+      "24x24": "https://secure.gravatar.com/avatar/40cff14f727dbf6d865576d575c6bdd2?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FJO-4.png",
+      "16x16": "https://secure.gravatar.com/avatar/40cff14f727dbf6d865576d575c6bdd2?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FJO-4.png",
+      "32x32": "https://secure.gravatar.com/avatar/40cff14f727dbf6d865576d575c6bdd2?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FJO-4.png"
+    },
+    "displayName": "Jira Outlook",
+    "active": true
+  },
+  {
+    "self": "https://proapro.atlassian.net/rest/api/3/user?accountId=557058:0867a421-a9ee-4659-801a-bc0ee4a4487e",
+    "accountId": "557058:0867a421-a9ee-4659-801a-bc0ee4a4487e",
+    "accountType": "app",
+    "avatarUrls": {
+      "48x48": "https://secure.gravatar.com/avatar/ab3787cd0c16633ae050dff9d5ab15fc?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FS-0.png",
+      "24x24": "https://secure.gravatar.com/avatar/ab3787cd0c16633ae050dff9d5ab15fc?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FS-0.png",
+      "16x16": "https://secure.gravatar.com/avatar/ab3787cd0c16633ae050dff9d5ab15fc?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FS-0.png",
+      "32x32": "https://secure.gravatar.com/avatar/ab3787cd0c16633ae050dff9d5ab15fc?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FS-0.png"
+    },
+    "displayName": "Slack",
+    "active": true
+  },
+  {
+    "self": "https://proapro.atlassian.net/rest/api/3/user?accountId=557058:950f9f5b-3d6d-4e1d-954a-21367ae9ac75",
+    "accountId": "557058:950f9f5b-3d6d-4e1d-954a-21367ae9ac75",
+    "accountType": "app",
+    "avatarUrls": {
+      "48x48": "https://secure.gravatar.com/avatar/726e9dfb98dfab7231aca0392486818d?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FJW-2.png",
+      "24x24": "https://secure.gravatar.com/avatar/726e9dfb98dfab7231aca0392486818d?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FJW-2.png",
+      "16x16": "https://secure.gravatar.com/avatar/726e9dfb98dfab7231aca0392486818d?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FJW-2.png",
+      "32x32": "https://secure.gravatar.com/avatar/726e9dfb98dfab7231aca0392486818d?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FJW-2.png"
+    },
+    "displayName": "Jira Service Management Widget",
+    "active": true
+  },
+  {
+    "self": "https://proapro.atlassian.net/rest/api/3/user?accountId=557058:214cdd6a-ff93-4d8b-838b-62dfcf1a2a71",
+    "accountId": "557058:214cdd6a-ff93-4d8b-838b-62dfcf1a2a71",
+    "accountType": "app",
+    "avatarUrls": {
+      "48x48": "https://secure.gravatar.com/avatar/5f14d72ea4c4ebb05e46175191444f71?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FT-2.png",
+      "24x24": "https://secure.gravatar.com/avatar/5f14d72ea4c4ebb05e46175191444f71?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FT-2.png",
+      "16x16": "https://secure.gravatar.com/avatar/5f14d72ea4c4ebb05e46175191444f71?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FT-2.png",
+      "32x32": "https://secure.gravatar.com/avatar/5f14d72ea4c4ebb05e46175191444f71?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FT-2.png"
+    },
+    "displayName": "Trello",
+    "active": true
+  },
+  {
+    "self": "https://proapro.atlassian.net/rest/api/3/user?accountId=5df87f13be20390cb347a860",
+    "accountId": "5df87f13be20390cb347a860",
+    "accountType": "atlassian",
+    "avatarUrls": {
+      "48x48": "https://secure.gravatar.com/avatar/7df59576540bce8df92dfd128f4e0a5d?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FP-6.png",
+      "24x24": "https://secure.gravatar.com/avatar/7df59576540bce8df92dfd128f4e0a5d?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FP-6.png",
+      "16x16": "https://secure.gravatar.com/avatar/7df59576540bce8df92dfd128f4e0a5d?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FP-6.png",
+      "32x32": "https://secure.gravatar.com/avatar/7df59576540bce8df92dfd128f4e0a5d?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FP-6.png"
+    },
+    "displayName": "pierre.simeoni",
+    "active": true,
+    "locale": "en_US"
+  },
+  {
+    "self": "https://proapro.atlassian.net/rest/api/3/user?accountId=5b6c7b3afbc68529c6c47967",
+    "accountId": "5b6c7b3afbc68529c6c47967",
+    "accountType": "app",
+    "avatarUrls": {
+      "48x48": "https://secure.gravatar.com/avatar/1ac15886f45477da1a8230e3c52df31e?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FSJ-2.png",
+      "24x24": "https://secure.gravatar.com/avatar/1ac15886f45477da1a8230e3c52df31e?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FSJ-2.png",
+      "16x16": "https://secure.gravatar.com/avatar/1ac15886f45477da1a8230e3c52df31e?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FSJ-2.png",
+      "32x32": "https://secure.gravatar.com/avatar/1ac15886f45477da1a8230e3c52df31e?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FSJ-2.png"
+    },
+    "displayName": "Statuspage for Jira",
+    "active": true
+  },
+  {
+    "self": "https://proapro.atlassian.net/rest/api/3/user?accountId=557058:7515f776-717b-445b-8d43-3c42e914d32c",
+    "accountId": "557058:7515f776-717b-445b-8d43-3c42e914d32c",
+    "accountType": "atlassian",
+    "avatarUrls": {
+      "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/557058:7515f776-717b-445b-8d43-3c42e914d32c/d9af0e0d-bd91-441b-ae13-e918e0b654cb/48",
+      "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/557058:7515f776-717b-445b-8d43-3c42e914d32c/d9af0e0d-bd91-441b-ae13-e918e0b654cb/24",
+      "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/557058:7515f776-717b-445b-8d43-3c42e914d32c/d9af0e0d-bd91-441b-ae13-e918e0b654cb/16",
+      "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/557058:7515f776-717b-445b-8d43-3c42e914d32c/d9af0e0d-bd91-441b-ae13-e918e0b654cb/32"
+    },
+    "displayName": "Delphine Boudou",
+    "active": true,
+    "timeZone": "Europe/Paris",
+    "locale": "fr_FR"
+  },
+  {
+    "self": "https://proapro.atlassian.net/rest/api/3/user?accountId=5ac5326a95d30150501e5ff4",
+    "accountId": "5ac5326a95d30150501e5ff4",
+    "accountType": "app",
+    "avatarUrls": {
+      "48x48": "https://secure.gravatar.com/avatar/5e3e172bcea3a4596dfeb38649d70a0e?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FJW-1.png",
+      "24x24": "https://secure.gravatar.com/avatar/5e3e172bcea3a4596dfeb38649d70a0e?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FJW-1.png",
+      "16x16": "https://secure.gravatar.com/avatar/5e3e172bcea3a4596dfeb38649d70a0e?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FJW-1.png",
+      "32x32": "https://secure.gravatar.com/avatar/5e3e172bcea3a4596dfeb38649d70a0e?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FJW-1.png"
+    },
+    "displayName": "Jira Cloud for Workplace",
+    "active": true
+  },
+  {
+    "self": "https://proapro.atlassian.net/rest/api/3/user?accountId=5cf112d31552030f1e3a5905",
+    "accountId": "5cf112d31552030f1e3a5905",
+    "accountType": "app",
+    "avatarUrls": {
+      "48x48": "https://secure.gravatar.com/avatar/92dbb0e2c4bdf7a4e079ce410ddb6029?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FJS-2.png",
+      "24x24": "https://secure.gravatar.com/avatar/92dbb0e2c4bdf7a4e079ce410ddb6029?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FJS-2.png",
+      "16x16": "https://secure.gravatar.com/avatar/92dbb0e2c4bdf7a4e079ce410ddb6029?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FJS-2.png",
+      "32x32": "https://secure.gravatar.com/avatar/92dbb0e2c4bdf7a4e079ce410ddb6029?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FJS-2.png"
+    },
+    "displayName": "Jira Spreadsheets",
+    "active": true
+  },
+  {
+    "self": "https://proapro.atlassian.net/rest/api/3/user?accountId=557058:0b67b4e0-47b5-4be1-aa44-91a60017834e",
+    "accountId": "557058:0b67b4e0-47b5-4be1-aa44-91a60017834e",
+    "accountType": "app",
+    "avatarUrls": {
+      "48x48": "https://secure.gravatar.com/avatar/ec770d5cd19ea8c7741d25556c0f90b8?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FMJ-5.png",
+      "24x24": "https://secure.gravatar.com/avatar/ec770d5cd19ea8c7741d25556c0f90b8?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FMJ-5.png",
+      "16x16": "https://secure.gravatar.com/avatar/ec770d5cd19ea8c7741d25556c0f90b8?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FMJ-5.png",
+      "32x32": "https://secure.gravatar.com/avatar/ec770d5cd19ea8c7741d25556c0f90b8?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FMJ-5.png"
+    },
+    "displayName": "Microsoft Teams Plugin for Jira",
+    "active": true
+  },
+  {
+    "self": "https://proapro.atlassian.net/rest/api/3/user?accountId=557058:f58131cb-b67d-43c7-b30d-6b58d40bd077",
+    "accountId": "557058:f58131cb-b67d-43c7-b30d-6b58d40bd077",
+    "accountType": "app",
+    "avatarUrls": {
+      "48x48": "https://secure.gravatar.com/avatar/600529a9c8bfef89daa848e6db28ed2d?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FAJ-0.png",
+      "24x24": "https://secure.gravatar.com/avatar/600529a9c8bfef89daa848e6db28ed2d?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FAJ-0.png",
+      "16x16": "https://secure.gravatar.com/avatar/600529a9c8bfef89daa848e6db28ed2d?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FAJ-0.png",
+      "32x32": "https://secure.gravatar.com/avatar/600529a9c8bfef89daa848e6db28ed2d?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FAJ-0.png"
+    },
+    "displayName": "Automation for Jira",
+    "active": true
+  },
+  {
+    "self": "https://proapro.atlassian.net/rest/api/3/user?accountId=5daf44229703bc0c2d27b1c6",
+    "accountId": "5daf44229703bc0c2d27b1c6",
+    "accountType": "app",
+    "avatarUrls": {
+      "48x48": "https://secure.gravatar.com/avatar/13b52817e7b2780db658d7088879313e?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FJ-2.png",
+      "24x24": "https://secure.gravatar.com/avatar/13b52817e7b2780db658d7088879313e?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FJ-2.png",
+      "16x16": "https://secure.gravatar.com/avatar/13b52817e7b2780db658d7088879313e?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FJ-2.png",
+      "32x32": "https://secure.gravatar.com/avatar/13b52817e7b2780db658d7088879313e?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FJ-2.png"
+    },
+    "displayName": "jsd-slack-integration",
+    "active": true
+  },
+  {
+    "self": "https://proapro.atlassian.net/rest/api/3/user?accountId=5dd64082af96bc0efbe55103",
+    "accountId": "5dd64082af96bc0efbe55103",
+    "accountType": "app",
+    "avatarUrls": {
+      "48x48": "https://secure.gravatar.com/avatar/675673c3f473815508441d00933b1752?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FOI-3.png",
+      "24x24": "https://secure.gravatar.com/avatar/675673c3f473815508441d00933b1752?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FOI-3.png",
+      "16x16": "https://secure.gravatar.com/avatar/675673c3f473815508441d00933b1752?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FOI-3.png",
+      "32x32": "https://secure.gravatar.com/avatar/675673c3f473815508441d00933b1752?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FOI-3.png"
+    },
+    "displayName": "Opsgenie Integration",
+    "active": true
+  },
+  {
+    "self": "https://proapro.atlassian.net/rest/api/3/user?accountId=qm:0850ba1a-6ed9-4334-ac0a-7402f6012949:9ed5191c-279a-4935-a6c2-19b9c4cb07cb",
+    "accountId": "qm:0850ba1a-6ed9-4334-ac0a-7402f6012949:9ed5191c-279a-4935-a6c2-19b9c4cb07cb",
+    "accountType": "customer",
+    "avatarUrls": {
+      "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+      "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+      "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+      "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png"
+    },
+    "displayName": "Former user",
+    "active": false
+  },
+  {
+    "self": "https://proapro.atlassian.net/rest/api/3/user?accountId=70121:52a007e5-e7c0-4172-8b49-f257fe89cc2c",
+    "accountId": "70121:52a007e5-e7c0-4172-8b49-f257fe89cc2c",
+    "accountType": "atlassian",
+    "avatarUrls": {
+      "48x48": "https://secure.gravatar.com/avatar/55d5e54e99679aa8f9f3e999f04f2d80?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FAT-0.png",
+      "24x24": "https://secure.gravatar.com/avatar/55d5e54e99679aa8f9f3e999f04f2d80?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FAT-0.png",
+      "16x16": "https://secure.gravatar.com/avatar/55d5e54e99679aa8f9f3e999f04f2d80?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FAT-0.png",
+      "32x32": "https://secure.gravatar.com/avatar/55d5e54e99679aa8f9f3e999f04f2d80?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FAT-0.png"
+    },
+    "displayName": "Aurore Tumiotto",
+    "active": true,
+    "timeZone": "Europe/Paris",
+    "locale": "fr_FR"
+  },
+  {
+    "self": "https://proapro.atlassian.net/rest/api/3/user?accountId=qm:0850ba1a-6ed9-4334-ac0a-7402f6012949:c8837e23-493b-4366-8e4a-20bd22d8a760",
+    "accountId": "qm:0850ba1a-6ed9-4334-ac0a-7402f6012949:c8837e23-493b-4366-8e4a-20bd22d8a760",
+    "accountType": "customer",
+    "avatarUrls": {
+      "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+      "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+      "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+      "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png"
+    },
+    "displayName": "Former user",
+    "active": false
+  },
+  {
+    "self": "https://proapro.atlassian.net/rest/api/3/user?accountId=70121:7e4f5fcd-df28-4f17-97c1-881fa50f7660",
+    "accountId": "70121:7e4f5fcd-df28-4f17-97c1-881fa50f7660",
+    "accountType": "atlassian",
+    "avatarUrls": {
+      "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/70121:7e4f5fcd-df28-4f17-97c1-881fa50f7660/b1220c32-a8ba-4721-8f02-d25df75a9cd1/48",
+      "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/70121:7e4f5fcd-df28-4f17-97c1-881fa50f7660/b1220c32-a8ba-4721-8f02-d25df75a9cd1/24",
+      "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/70121:7e4f5fcd-df28-4f17-97c1-881fa50f7660/b1220c32-a8ba-4721-8f02-d25df75a9cd1/16",
+      "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/70121:7e4f5fcd-df28-4f17-97c1-881fa50f7660/b1220c32-a8ba-4721-8f02-d25df75a9cd1/32"
+    },
+    "displayName": "Bernard FERRAN",
+    "active": true,
+    "timeZone": "Europe/Paris",
+    "locale": "fr_FR"
+  },
+  {
+    "self": "https://proapro.atlassian.net/rest/api/3/user?accountId=5b70c8b80fd0ac05d389f5e9",
+    "accountId": "5b70c8b80fd0ac05d389f5e9",
+    "accountType": "app",
+    "avatarUrls": {
+      "48x48": "https://secure.gravatar.com/avatar/7d674fbf0569d8bdd3f2c19ae5b4462a?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FCN-5.png",
+      "24x24": "https://secure.gravatar.com/avatar/7d674fbf0569d8bdd3f2c19ae5b4462a?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FCN-5.png",
+      "16x16": "https://secure.gravatar.com/avatar/7d674fbf0569d8bdd3f2c19ae5b4462a?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FCN-5.png",
+      "32x32": "https://secure.gravatar.com/avatar/7d674fbf0569d8bdd3f2c19ae5b4462a?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FCN-5.png"
+    },
+    "displayName": "Chat Notifications",
+    "active": true
+  },
+  {
+    "self": "https://proapro.atlassian.net/rest/api/3/user?accountId=5d9afe0010f4800c341a2bba",
+    "accountId": "5d9afe0010f4800c341a2bba",
+    "accountType": "app",
+    "avatarUrls": {
+      "48x48": "https://secure.gravatar.com/avatar/7864acb4bb3d9580f3f392b7fe2bead6?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FOT-1.png",
+      "24x24": "https://secure.gravatar.com/avatar/7864acb4bb3d9580f3f392b7fe2bead6?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FOT-1.png",
+      "16x16": "https://secure.gravatar.com/avatar/7864acb4bb3d9580f3f392b7fe2bead6?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FOT-1.png",
+      "32x32": "https://secure.gravatar.com/avatar/7864acb4bb3d9580f3f392b7fe2bead6?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FOT-1.png"
+    },
+    "displayName": "Opsgenie Incident Timeline",
+    "active": true
+  },
+  {
+    "self": "https://proapro.atlassian.net/rest/api/3/user?accountId=5d9b2860cd50b80dcea8a5b7",
+    "accountId": "5d9b2860cd50b80dcea8a5b7",
+    "accountType": "app",
+    "avatarUrls": {
+      "48x48": "https://secure.gravatar.com/avatar/a3f534eca2fc5dc81bf31edec3adee37?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FOT-3.png",
+      "24x24": "https://secure.gravatar.com/avatar/a3f534eca2fc5dc81bf31edec3adee37?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FOT-3.png",
+      "16x16": "https://secure.gravatar.com/avatar/a3f534eca2fc5dc81bf31edec3adee37?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FOT-3.png",
+      "32x32": "https://secure.gravatar.com/avatar/a3f534eca2fc5dc81bf31edec3adee37?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FOT-3.png"
+    },
+    "displayName": "Opsgenie Incident Timeline",
+    "active": true
+  },
+  {
+    "self": "https://proapro.atlassian.net/rest/api/3/user?accountId=557058:cbc04d7b-be84-46eb-90e4-e567aa5332c6",
+    "accountId": "557058:cbc04d7b-be84-46eb-90e4-e567aa5332c6",
+    "accountType": "app",
+    "avatarUrls": {
+      "48x48": "https://secure.gravatar.com/avatar/189be88917ebf55b8c24642ca8bb3f38?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Fdefault-avatar-3.png",
+      "24x24": "https://secure.gravatar.com/avatar/189be88917ebf55b8c24642ca8bb3f38?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Fdefault-avatar-3.png",
+      "16x16": "https://secure.gravatar.com/avatar/189be88917ebf55b8c24642ca8bb3f38?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Fdefault-avatar-3.png",
+      "32x32": "https://secure.gravatar.com/avatar/189be88917ebf55b8c24642ca8bb3f38?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Fdefault-avatar-3.png"
+    },
+    "displayName": "Confluence Analytics (System)",
+    "active": true
+  },
+  {
+    "self": "https://proapro.atlassian.net/rest/api/3/user?accountId=557058:d6b5955a-e193-41e1-b051-79cdb0755d68",
+    "accountId": "557058:d6b5955a-e193-41e1-b051-79cdb0755d68",
+    "accountType": "app",
+    "avatarUrls": {
+      "48x48": "https://secure.gravatar.com/avatar/53e3e37950768a905d53cebdfcbd63e3?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FT-1.png",
+      "24x24": "https://secure.gravatar.com/avatar/53e3e37950768a905d53cebdfcbd63e3?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FT-1.png",
+      "16x16": "https://secure.gravatar.com/avatar/53e3e37950768a905d53cebdfcbd63e3?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FT-1.png",
+      "32x32": "https://secure.gravatar.com/avatar/53e3e37950768a905d53cebdfcbd63e3?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FT-1.png"
+    },
+    "displayName": "Trello",
+    "active": true
+  },
+  {
+    "self": "https://proapro.atlassian.net/rest/api/3/user?accountId=5b95d5f04d21642beb810cae",
+    "accountId": "5b95d5f04d21642beb810cae",
+    "accountType": "app",
+    "avatarUrls": {
+      "48x48": "https://secure.gravatar.com/avatar/116f0fc21f60b2a512dde8fc9de50987?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FS-6.png",
+      "24x24": "https://secure.gravatar.com/avatar/116f0fc21f60b2a512dde8fc9de50987?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FS-6.png",
+      "16x16": "https://secure.gravatar.com/avatar/116f0fc21f60b2a512dde8fc9de50987?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FS-6.png",
+      "32x32": "https://secure.gravatar.com/avatar/116f0fc21f60b2a512dde8fc9de50987?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FS-6.png"
+    },
+    "displayName": "sd-no-app-access-local-user-addon",
+    "active": true
+  },
+  {
+    "self": "https://proapro.atlassian.net/rest/api/3/user?accountId=5d94abbf56bb950dd648f744",
+    "accountId": "5d94abbf56bb950dd648f744",
+    "accountType": "app",
+    "avatarUrls": {
+      "48x48": "https://secure.gravatar.com/avatar/0da14d3fb0481976f95ed716e039afc4?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FTJ-2.png",
+      "24x24": "https://secure.gravatar.com/avatar/0da14d3fb0481976f95ed716e039afc4?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FTJ-2.png",
+      "16x16": "https://secure.gravatar.com/avatar/0da14d3fb0481976f95ed716e039afc4?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FTJ-2.png",
+      "32x32": "https://secure.gravatar.com/avatar/0da14d3fb0481976f95ed716e039afc4?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FTJ-2.png"
+    },
+    "displayName": "Timesheet tracking for Jira",
+    "active": true
+  },
+  {
+    "self": "https://proapro.atlassian.net/rest/api/3/user?accountId=5f69a97046a2ed0072eba10b",
+    "accountId": "5f69a97046a2ed0072eba10b",
+    "accountType": "atlassian",
+    "avatarUrls": {
+      "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/5f69a97046a2ed0072eba10b/553a8d01-6c47-4c84-a1be-f1ae65f50a62/48",
+      "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/5f69a97046a2ed0072eba10b/553a8d01-6c47-4c84-a1be-f1ae65f50a62/24",
+      "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/5f69a97046a2ed0072eba10b/553a8d01-6c47-4c84-a1be-f1ae65f50a62/16",
+      "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/5f69a97046a2ed0072eba10b/553a8d01-6c47-4c84-a1be-f1ae65f50a62/32"
+    },
+    "displayName": "Clemence",
+    "active": false,
+    "locale": "fr_FR"
+  },
+  {
+    "self": "https://proapro.atlassian.net/rest/api/3/user?accountId=5d710216522f790d9c773bce",
+    "accountId": "5d710216522f790d9c773bce",
+    "accountType": "app",
+    "avatarUrls": {
+      "48x48": "https://secure.gravatar.com/avatar/9ee13138d0aa4e8fe3ea25aeb3777720?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FCF-4.png",
+      "24x24": "https://secure.gravatar.com/avatar/9ee13138d0aa4e8fe3ea25aeb3777720?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FCF-4.png",
+      "16x16": "https://secure.gravatar.com/avatar/9ee13138d0aa4e8fe3ea25aeb3777720?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FCF-4.png",
+      "32x32": "https://secure.gravatar.com/avatar/9ee13138d0aa4e8fe3ea25aeb3777720?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FCF-4.png"
+    },
+    "displayName": "Clockwork Automated Timesheets Free",
+    "active": true
+  },
+  {
+    "self": "https://proapro.atlassian.net/rest/api/3/user?accountId=5dd3eb2f58fc78100710bbe4",
+    "accountId": "5dd3eb2f58fc78100710bbe4",
+    "accountType": "app",
+    "avatarUrls": {
+      "48x48": "https://secure.gravatar.com/avatar/bc6ea990cf6c965c54768c53fe2240d8?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FGJ-1.png",
+      "24x24": "https://secure.gravatar.com/avatar/bc6ea990cf6c965c54768c53fe2240d8?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FGJ-1.png",
+      "16x16": "https://secure.gravatar.com/avatar/bc6ea990cf6c965c54768c53fe2240d8?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FGJ-1.png",
+      "32x32": "https://secure.gravatar.com/avatar/bc6ea990cf6c965c54768c53fe2240d8?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FGJ-1.png"
+    },
+    "displayName": "Grenade Hub Resource Management for Jira",
+    "active": true
+  },
+  {
+    "self": "https://proapro.atlassian.net/rest/api/3/user?accountId=5f71fe9058899e007044fd3c",
+    "accountId": "5f71fe9058899e007044fd3c",
+    "accountType": "atlassian",
+    "avatarUrls": {
+      "48x48": "https://secure.gravatar.com/avatar/76d4af823e27907d80c679c362dd11ce?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FST-5.png",
+      "24x24": "https://secure.gravatar.com/avatar/76d4af823e27907d80c679c362dd11ce?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FST-5.png",
+      "16x16": "https://secure.gravatar.com/avatar/76d4af823e27907d80c679c362dd11ce?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FST-5.png",
+      "32x32": "https://secure.gravatar.com/avatar/76d4af823e27907d80c679c362dd11ce?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FST-5.png"
+    },
+    "displayName": "Stephane Terrassier",
+    "active": true,
+    "locale": "fr_FR"
+  },
+  {
+    "self": "https://proapro.atlassian.net/rest/api/3/user?accountId=70121:c4859b1a-f6a4-41b2-8e92-09a570aa80f6",
+    "accountId": "70121:c4859b1a-f6a4-41b2-8e92-09a570aa80f6",
+    "accountType": "atlassian",
+    "avatarUrls": {
+      "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/70121:c4859b1a-f6a4-41b2-8e92-09a570aa80f6/7b59fa0c-e8bf-48b5-97e3-44a08c632eca/48",
+      "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/70121:c4859b1a-f6a4-41b2-8e92-09a570aa80f6/7b59fa0c-e8bf-48b5-97e3-44a08c632eca/24",
+      "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/70121:c4859b1a-f6a4-41b2-8e92-09a570aa80f6/7b59fa0c-e8bf-48b5-97e3-44a08c632eca/16",
+      "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/70121:c4859b1a-f6a4-41b2-8e92-09a570aa80f6/7b59fa0c-e8bf-48b5-97e3-44a08c632eca/32"
+    },
+    "displayName": "Céline BOUZAT",
+    "active": true,
+    "locale": "fr_FR"
+  },
+  {
+    "self": "https://proapro.atlassian.net/rest/api/3/user?accountId=5f71fef03fe07600693b0194",
+    "accountId": "5f71fef03fe07600693b0194",
+    "accountType": "atlassian",
+    "avatarUrls": {
+      "48x48": "https://secure.gravatar.com/avatar/6ba14e2640784a64c53d9a1339a049f1?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FA-2.png",
+      "24x24": "https://secure.gravatar.com/avatar/6ba14e2640784a64c53d9a1339a049f1?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FA-2.png",
+      "16x16": "https://secure.gravatar.com/avatar/6ba14e2640784a64c53d9a1339a049f1?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FA-2.png",
+      "32x32": "https://secure.gravatar.com/avatar/6ba14e2640784a64c53d9a1339a049f1?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FA-2.png"
+    },
+    "displayName": "alexandre.fourrier",
+    "active": true,
+    "locale": "en_US"
+  },
+  {
+    "self": "https://proapro.atlassian.net/rest/api/3/user?accountId=557058:30a6b014-f0e0-41e6-839c-5d25e19587ca",
+    "accountId": "557058:30a6b014-f0e0-41e6-839c-5d25e19587ca",
+    "accountType": "atlassian",
+    "avatarUrls": {
+      "48x48": "https://secure.gravatar.com/avatar/f3e6b8ab3c44cb2172afea6331b64b6f?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FS-4.png",
+      "24x24": "https://secure.gravatar.com/avatar/f3e6b8ab3c44cb2172afea6331b64b6f?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FS-4.png",
+      "16x16": "https://secure.gravatar.com/avatar/f3e6b8ab3c44cb2172afea6331b64b6f?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FS-4.png",
+      "32x32": "https://secure.gravatar.com/avatar/f3e6b8ab3c44cb2172afea6331b64b6f?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FS-4.png"
+    },
+    "displayName": "sandrine.simonet@proapro.fr",
+    "active": false,
+    "locale": "en_US"
+  },
+  {
+    "self": "https://proapro.atlassian.net/rest/api/3/user?accountId=5f72097d4d09f70076cb8bd8",
+    "accountId": "5f72097d4d09f70076cb8bd8",
+    "accountType": "atlassian",
+    "avatarUrls": {
+      "48x48": "https://secure.gravatar.com/avatar/1fd57f9f9bef94788df0b9ca0b487a84?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FJ-5.png",
+      "24x24": "https://secure.gravatar.com/avatar/1fd57f9f9bef94788df0b9ca0b487a84?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FJ-5.png",
+      "16x16": "https://secure.gravatar.com/avatar/1fd57f9f9bef94788df0b9ca0b487a84?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FJ-5.png",
+      "32x32": "https://secure.gravatar.com/avatar/1fd57f9f9bef94788df0b9ca0b487a84?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FJ-5.png"
+    },
+    "displayName": "Johan.manteau",
+    "active": false,
+    "locale": "fr_FR"
+  },
+  {
+    "self": "https://proapro.atlassian.net/rest/api/3/user?accountId=5f7d70a825fbdf0068788e96",
+    "accountId": "5f7d70a825fbdf0068788e96",
+    "accountType": "atlassian",
+    "avatarUrls": {
+      "48x48": "https://secure.gravatar.com/avatar/ea2a01ffb358d38f6beab9547b931f8a?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FD-0.png",
+      "24x24": "https://secure.gravatar.com/avatar/ea2a01ffb358d38f6beab9547b931f8a?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FD-0.png",
+      "16x16": "https://secure.gravatar.com/avatar/ea2a01ffb358d38f6beab9547b931f8a?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FD-0.png",
+      "32x32": "https://secure.gravatar.com/avatar/ea2a01ffb358d38f6beab9547b931f8a?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FD-0.png"
+    },
+    "displayName": "DANIEL",
+    "active": true,
+    "locale": "fr_FR"
+  },
+  {
+    "self": "https://proapro.atlassian.net/rest/api/3/user?accountId=5f7d711158899e0070a37751",
+    "accountId": "5f7d711158899e0070a37751",
+    "accountType": "atlassian",
+    "avatarUrls": {
+      "48x48": "https://secure.gravatar.com/avatar/b5632129bde351dd335e8f92d4ab3103?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FG-1.png",
+      "24x24": "https://secure.gravatar.com/avatar/b5632129bde351dd335e8f92d4ab3103?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FG-1.png",
+      "16x16": "https://secure.gravatar.com/avatar/b5632129bde351dd335e8f92d4ab3103?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FG-1.png",
+      "32x32": "https://secure.gravatar.com/avatar/b5632129bde351dd335e8f92d4ab3103?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FG-1.png"
+    },
+    "displayName": "gilles.bosca-ext",
+    "active": false
+  },
+  {
+    "self": "https://proapro.atlassian.net/rest/api/3/user?accountId=5b752c1da7761205d91f1c89",
+    "accountId": "5b752c1da7761205d91f1c89",
+    "accountType": "app",
+    "avatarUrls": {
+      "48x48": "https://secure.gravatar.com/avatar/fd8913ea06001d5afd95d0c360ca839d?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FSJ-0.png",
+      "24x24": "https://secure.gravatar.com/avatar/fd8913ea06001d5afd95d0c360ca839d?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FSJ-0.png",
+      "16x16": "https://secure.gravatar.com/avatar/fd8913ea06001d5afd95d0c360ca839d?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FSJ-0.png",
+      "32x32": "https://secure.gravatar.com/avatar/fd8913ea06001d5afd95d0c360ca839d?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FSJ-0.png"
+    },
+    "displayName": "STAGIL Create and Link for JIRA",
+    "active": true
+  },
+  {
+    "self": "https://proapro.atlassian.net/rest/api/3/user?accountId=qm:0850ba1a-6ed9-4334-ac0a-7402f6012949:1bf78ce3-f46b-4fba-bf0b-44916f1545db",
+    "accountId": "qm:0850ba1a-6ed9-4334-ac0a-7402f6012949:1bf78ce3-f46b-4fba-bf0b-44916f1545db",
+    "accountType": "customer",
+    "avatarUrls": {
+      "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+      "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+      "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+      "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png"
+    },
+    "displayName": "Former user",
+    "active": false
+  },
+  {
+    "self": "https://proapro.atlassian.net/rest/api/3/user?accountId=5fc5fedb7cc1030069aa3086",
+    "accountId": "5fc5fedb7cc1030069aa3086",
+    "accountType": "atlassian",
+    "avatarUrls": {
+      "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/5fc5fedb7cc1030069aa3086/c9b0521d-f03d-4860-a9a7-eee749cc4d68/48",
+      "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/5fc5fedb7cc1030069aa3086/c9b0521d-f03d-4860-a9a7-eee749cc4d68/24",
+      "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/5fc5fedb7cc1030069aa3086/c9b0521d-f03d-4860-a9a7-eee749cc4d68/16",
+      "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/5fc5fedb7cc1030069aa3086/c9b0521d-f03d-4860-a9a7-eee749cc4d68/32"
+    },
+    "displayName": "Gilles BOSCA",
+    "active": true,
+    "locale": "fr_FR"
+  },
+  {
+    "self": "https://proapro.atlassian.net/rest/api/3/user?accountId=5fce3f254d2179006e89de24",
+    "accountId": "5fce3f254d2179006e89de24",
+    "accountType": "atlassian",
+    "avatarUrls": {
+      "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/5fce3f254d2179006e89de24/413547b1-493f-42b2-a155-100c4f998ccc/48",
+      "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/5fce3f254d2179006e89de24/413547b1-493f-42b2-a155-100c4f998ccc/24",
+      "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/5fce3f254d2179006e89de24/413547b1-493f-42b2-a155-100c4f998ccc/16",
+      "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/5fce3f254d2179006e89de24/413547b1-493f-42b2-a155-100c4f998ccc/32"
+    },
+    "displayName": "N2-Applications_Métiers",
+    "active": false,
+    "locale": "fr_FR"
+  },
+  {
+    "self": "https://proapro.atlassian.net/rest/api/3/user?accountId=qm:0850ba1a-6ed9-4334-ac0a-7402f6012949:7192890a-920f-48ab-8d3d-cccb2cfddf21",
+    "accountId": "qm:0850ba1a-6ed9-4334-ac0a-7402f6012949:7192890a-920f-48ab-8d3d-cccb2cfddf21",
+    "accountType": "customer",
+    "avatarUrls": {
+      "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+      "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+      "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+      "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png"
+    },
+    "displayName": "philippe.tranier@proapro.fr",
+    "active": true
+  },
+  {
+    "self": "https://proapro.atlassian.net/rest/api/3/user?accountId=qm:0850ba1a-6ed9-4334-ac0a-7402f6012949:23cd6456-dea9-4c3d-b469-d34eae201afe",
+    "accountId": "qm:0850ba1a-6ed9-4334-ac0a-7402f6012949:23cd6456-dea9-4c3d-b469-d34eae201afe",
+    "accountType": "customer",
+    "avatarUrls": {
+      "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+      "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+      "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+      "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png"
+    },
+    "displayName": "paul.maurel-ext@proapro.fr",
+    "active": true
+  },
+  {
+    "self": "https://proapro.atlassian.net/rest/api/3/user?accountId=qm:0850ba1a-6ed9-4334-ac0a-7402f6012949:d4aeb433-e92c-4283-ae6b-370c92c54543",
+    "accountId": "qm:0850ba1a-6ed9-4334-ac0a-7402f6012949:d4aeb433-e92c-4283-ae6b-370c92c54543",
+    "accountType": "customer",
+    "avatarUrls": {
+      "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+      "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+      "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+      "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png"
+    },
+    "displayName": "philippe.feijoo@proapro.fr",
+    "active": true
+  },
+  {
+    "self": "https://proapro.atlassian.net/rest/api/3/user?accountId=qm:0850ba1a-6ed9-4334-ac0a-7402f6012949:1bcecf84-2be4-47d1-945c-c58d519c4436",
+    "accountId": "qm:0850ba1a-6ed9-4334-ac0a-7402f6012949:1bcecf84-2be4-47d1-945c-c58d519c4436",
+    "accountType": "customer",
+    "avatarUrls": {
+      "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+      "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+      "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+      "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png"
+    },
+    "displayName": "jeanphilippe.cachot@proapro.fr",
+    "active": true
+  },
+  {
+    "self": "https://proapro.atlassian.net/rest/api/3/user?accountId=qm:0850ba1a-6ed9-4334-ac0a-7402f6012949:7d66bfe8-1628-4782-874f-4412ce400acb",
+    "accountId": "qm:0850ba1a-6ed9-4334-ac0a-7402f6012949:7d66bfe8-1628-4782-874f-4412ce400acb",
+    "accountType": "customer",
+    "avatarUrls": {
+      "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+      "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+      "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+      "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png"
+    },
+    "displayName": "isabelle.moreno@proapro.fr",
+    "active": true
+  },
+  {
+    "self": "https://proapro.atlassian.net/rest/api/3/user?accountId=qm:0850ba1a-6ed9-4334-ac0a-7402f6012949:a087bfc5-4e19-4b8b-b104-616af2716411",
+    "accountId": "qm:0850ba1a-6ed9-4334-ac0a-7402f6012949:a087bfc5-4e19-4b8b-b104-616af2716411",
+    "accountType": "customer",
+    "avatarUrls": {
+      "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+      "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+      "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png",
+      "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png"
+    },
+    "displayName": "frederick.hermet@proapro.fr",
+    "active": true
+  },
+  {
+    "self": "https://proapro.atlassian.net/rest/api/3/user?accountId=5cb4ae0e4b97ab11a18e00c7",
+    "accountId": "5cb4ae0e4b97ab11a18e00c7",
+    "accountType": "app",
+    "avatarUrls": {
+      "48x48": "https://secure.gravatar.com/avatar/13af44d2c4f3a62cf1ad368a4028db51?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FH-6.png",
+      "24x24": "https://secure.gravatar.com/avatar/13af44d2c4f3a62cf1ad368a4028db51?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FH-6.png",
+      "16x16": "https://secure.gravatar.com/avatar/13af44d2c4f3a62cf1ad368a4028db51?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FH-6.png",
+      "32x32": "https://secure.gravatar.com/avatar/13af44d2c4f3a62cf1ad368a4028db51?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FH-6.png"
+    },
+    "displayName": "Halp",
+    "active": true
+  },
+  {
+    "self": "https://proapro.atlassian.net/rest/api/3/user?accountId=5fa004240eb8b400695f2a6a",
+    "accountId": "5fa004240eb8b400695f2a6a",
+    "accountType": "atlassian",
+    "avatarUrls": {
+      "48x48": "https://secure.gravatar.com/avatar/10d49b917a3bf0a2708c56405b63c0d1?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FMC-4.png",
+      "24x24": "https://secure.gravatar.com/avatar/10d49b917a3bf0a2708c56405b63c0d1?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FMC-4.png",
+      "16x16": "https://secure.gravatar.com/avatar/10d49b917a3bf0a2708c56405b63c0d1?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FMC-4.png",
+      "32x32": "https://secure.gravatar.com/avatar/10d49b917a3bf0a2708c56405b63c0d1?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FMC-4.png"
+    },
+    "displayName": "Mathis Cartagena",
+    "active": true,
+    "locale": "fr_FR"
+  },
+  {
+    "self": "https://proapro.atlassian.net/rest/api/3/user?accountId=5f97f43762584c006bcd1ab7",
+    "accountId": "5f97f43762584c006bcd1ab7",
+    "accountType": "atlassian",
+    "avatarUrls": {
+      "48x48": "https://secure.gravatar.com/avatar/e23782883f3e6d636a7f9f190212f6d6?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FR-6.png",
+      "24x24": "https://secure.gravatar.com/avatar/e23782883f3e6d636a7f9f190212f6d6?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FR-6.png",
+      "16x16": "https://secure.gravatar.com/avatar/e23782883f3e6d636a7f9f190212f6d6?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FR-6.png",
+      "32x32": "https://secure.gravatar.com/avatar/e23782883f3e6d636a7f9f190212f6d6?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FR-6.png"
+    },
+    "displayName": "reyan",
+    "active": false,
+    "locale": "fr_FR"
+  },
+  {
+    "self": "https://proapro.atlassian.net/rest/api/3/user?accountId=604f7d9766c879006805a44a",
+    "accountId": "604f7d9766c879006805a44a",
+    "accountType": "atlassian",
+    "avatarUrls": {
+      "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/604f7d9766c879006805a44a/fbcc140d-7fdb-4b7a-8438-2e695b8b4113/48",
+      "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/604f7d9766c879006805a44a/fbcc140d-7fdb-4b7a-8438-2e695b8b4113/24",
+      "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/604f7d9766c879006805a44a/fbcc140d-7fdb-4b7a-8438-2e695b8b4113/16",
+      "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/604f7d9766c879006805a44a/fbcc140d-7fdb-4b7a-8438-2e695b8b4113/32"
+    },
+    "displayName": "yann.lesage-ext",
+    "active": true,
+    "locale": "fr_FR"
+  },
+  {
+    "self": "https://proapro.atlassian.net/rest/api/3/user?accountId=606192d7453ab5006a45d227",
+    "accountId": "606192d7453ab5006a45d227",
+    "accountType": "atlassian",
+    "avatarUrls": {
+      "48x48": "https://secure.gravatar.com/avatar/655991209682aaf1fe30d3253a4a2b89?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FCF-6.png",
+      "24x24": "https://secure.gravatar.com/avatar/655991209682aaf1fe30d3253a4a2b89?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FCF-6.png",
+      "16x16": "https://secure.gravatar.com/avatar/655991209682aaf1fe30d3253a4a2b89?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FCF-6.png",
+      "32x32": "https://secure.gravatar.com/avatar/655991209682aaf1fe30d3253a4a2b89?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FCF-6.png"
+    },
+    "displayName": "CISSE Fatimatou",
+    "active": true,
+    "locale": "fr_FR"
+  }
+]

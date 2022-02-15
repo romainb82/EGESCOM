@@ -1,0 +1,5 @@
+ACTIVER OU PAS UN MODULE
+config/config.inc.php => define('PROJECT_MODULES', array('CLIENT' => false, 'DLC' => true, 'ARTICLE' => false));
+
+PUBLIER EN DEV, RECETTE ou PROD
+config/config.inc.php => define('BASE_PATH_WS', 'http://10.183.193.1:11100/ws');

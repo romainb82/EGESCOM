@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{% block title %}{% endblock %} - GESCOM App</title>
+    <link rel="icon" type="image/png" href="/app/public/favicon.png" />
+    <meta name="robots" content="noindex, nofollow" />
+    <link rel="stylesheet" href="/app/public/styles/index.css" />
+    <link rel="stylesheet" href="/app/public/node_modules/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="/app/public/node_modules/sweetalert2/dist/sweetalert2.css" />
+    <link rel="stylesheet" href="/app/public/node_modules/datatables.net-dt/css/jquery.dataTables.min.css" />
+    <link rel="stylesheet" href="/app/public/node_modules/datatables.net-editor-dt/css/editor.bootstrap.min.css" />
+    <link rel="stylesheet" href="/app/public/node_modules/datatables.net-autofill-dt/css/autoFill.dataTables.min.css" />
+    <link rel="stylesheet" href="/app/public/node_modules/datatables.net-buttons-dt/css/buttons.dataTables.min.css" />
+    <link rel="stylesheet" href="/app/public/node_modules/datatables.net-colreorder-dt/css/colReorder.dataTables.min.css" />
+    <link rel="stylesheet" href="/app/public/node_modules/datatables.net-datetime/dist/dataTables.dateTime.min.css" />
+    <link rel="stylesheet" href="/app/public/node_modules/datatables.net-fixedcolumns-dt/css/fixedColumns.dataTables.min.css" />
+    <link rel="stylesheet" href="/app/public/node_modules/datatables.net-fixedheader-dt/css/fixedHeader.dataTables.min.css" />
+    <link rel="stylesheet" href="/app/public/node_modules/datatables.net-keytable-dt/css/keyTable.dataTables.min.css" />
+    <link rel="stylesheet" href="/app/public/node_modules/datatables.net-responsive-dt/css/responsive.dataTables.min.css" />
+    <link rel="stylesheet" href="/app/public/node_modules/datatables.net-rowgroup-dt/css/rowGroup.dataTables.min.css" />
+    <link rel="stylesheet" href="/app/public/node_modules/datatables.net-rowreorder-dt/css/rowReorder.dataTables.min.css" />
+    <link rel="stylesheet" href="/app/public/node_modules/datatables.net-scroller-dt/css/scroller.dataTables.min.css" />
+    <link rel="stylesheet" href="/app/public/node_modules/datatables.net-searchbuilder-dt/css/searchBuilder.dataTables.min.css" />
+    <link rel="stylesheet" href="/app/public/node_modules/datatables.net-searchpanes-dt/css/searchPanes.dataTables.min.css" />
+    <link rel="stylesheet" href="/app/public/node_modules/datatables.net-select-dt/css/select.dataTables.min.css" />
+    <link rel='stylesheet' href='/app/public/node_modules/mapbox-gl/dist/mapbox-gl.css'  />
+    <link rel='stylesheet' href='/app/public/node_modules/@mapbox/mapbox-gl-directions/dist/mapbox-gl-directions.css'  />
+    <link rel='stylesheet' href='/app/public/node_modules/@mapbox/mapbox-gl-geocoder/dist/mapbox-gl-geocoder.css'  />
+    <link rel='stylesheet' href='/app/public/node_modules/fullcalendar/main.css'  />
+    {% block css %}{% endblock %}
+    {% block style %}{% endblock %}
+</head>
+<body>
+
+<div id="loader-wrapper">
+    <div id="loader" style="width: 50px; height: 50px; margin: -25px 0 0 -25px;"></div>
+    <div class="loader-section"></div>
+</div>
+
+{% block content %}{% endblock %}
+<script src="/app/public/scripts/vendor/svg4everybody.min.js"></script>
+<script src="/app/public/node_modules/sweetalert2/dist/sweetalert2.js"></script>
+<script src="/app/public/node_modules/polyfill/index.js"></script>
+<script src="/app/public/node_modules/highcharts/highcharts.js"></script>
+<script src="/app/public/node_modules/highcharts/modules/accessibility.js"></script>
+<script src="/app/public/node_modules/highcharts/modules/data.js"></script>
+<script src="/app/public/node_modules/highcharts/modules/drilldown.js"></script>
+<script src="/app/public/node_modules/highcharts/modules/export-data.js"></script>
+<script src="/app/public/node_modules/highcharts/modules/exporting.js"></script>
+<script src="/app/public/node_modules/highcharts/modules/series-label.js"></script>
+<script src="/app/public/node_modules/jquery/dist/jquery.js"></script>
+<script src="/app/public/node_modules/jszip/dist/jszip.min.js"></script>
+<script src="/app/public/node_modules/pdfmake/build/pdfmake.min.js"></script>
+<script src="/app/public/node_modules/pdfmake/build/vfs_fonts.js"></script>
+<script src="/app/public/node_modules/datatables.net/js/jquery.dataTables.min.js"></script>
+<script src="/app/public/node_modules/datatables.net-autofill/js/dataTables.autoFill.min.js"></script>
+<script src="/app/public/node_modules/datatables.net-buttons/js/dataTables.buttons.min.js"></script>
+<script src="/app/public/node_modules/datatables.net-buttons/js/buttons.html5.min.js"></script>
+<script src="/app/public/node_modules/datatables.net-buttons/js/buttons.print.min.js"></script>
+<!--<script src="/app/public/node_modules/datatables.net-colreorder/js/dataTables.colReorder.min.js"></script>-->
+<script src="/app/public/node_modules/datatables.net-datetime/dist/dataTables.dateTime.min.js"></script>
+<script src="/app/public/node_modules/datatables.net-fixedcolumns/js/dataTables.fixedColumns.min.js"></script>
+<script src="/app/public/node_modules/datatables.net-fixedheader/js/dataTables.fixedHeader.min.js"></script>
+<script src="/app/public/node_modules/datatables.net-keytable/js/dataTables.keyTable.min.js"></script>
+<script src="/app/public/node_modules/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
+<script src="/app/public/node_modules/datatables.net-rowgroup/js/dataTables.rowGroup.min.js"></script>
+<script src="/app/public/node_modules/datatables.net-rowreorder/js/dataTables.rowReorder.min.js"></script>
+<script src="/app/public/node_modules/datatables.net-scroller/js/dataTables.scroller.min.js"></script>
+<script src="/app/public/node_modules/datatables.net-searchbuilder/js/dataTables.searchBuilder.min.js"></script>
+<script src="/app/public/node_modules/datatables.net-searchpanes/js/dataTables.searchPanes.min.js"></script>
+<script src="/app/public/node_modules/datatables.net-select/js/dataTables.select.min.js"></script>
+<script src="/app/public/node_modules/datatables.net-colreorderwithresize-npm/ColReorderWithResize.js"></script>
+<script src="/app/public/node_modules/iframe-resizer/js/iframeResizer.contentWindow.min.js"></script>
+<script src='/app/public/node_modules/js-file-downloader/dist/js-file-downloader.js'></script>
+<script src='/app/public/node_modules/mapbox-gl/dist/mapbox-gl.js'></script>
+<script src='/app/public/node_modules/@mapbox/mapbox-gl-directions/dist/mapbox-gl-directions.js'></script>
+<script src='/app/public/node_modules/@mapbox/mapbox-gl-geocoder/dist/mapbox-gl-geocoder.min.js'></script>
+<script src='/app/public/node_modules/fullcalendar/main.js'></script>
+<script src="/app/public/scripts/vendor/jquery-cordova-oauth2-master/cordova.oauth2.js"></script>
+<script src="/app/public/scripts/app.js"></script>
+{% block js %}{% endblock %}
+<script>
+    $(document).ready(function() {
+        setTimeout(function(){
+            $('body').addClass('loaded');
+        }, 0);
+    });
+
+    svg4everybody();
+    window.onload = ini();
+
+    function resizeIFrameToFitContent( iFrame ) {
+
+        iFrame.width  = iFrame.contentWindow.document.body.scrollWidth;
+        iFrame.height = iFrame.contentWindow.document.body.scrollHeight+10;
+    }
+
+    window.addEventListener('DOMContentLoaded', function(e) {
+
+        var iframes = document.querySelectorAll("iframe");
+        for( var i = 0; i < iframes.length; i++) {
+            resizeIFrameToFitContent( iframes[i] );
+        }
+    });
+
+
+</script>
+{% block script %}{% endblock %}
+</body>
+</html>

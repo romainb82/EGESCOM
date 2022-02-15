@@ -1,0 +1,19 @@
+{
+  "name": "datatables.net-editor-dt",
+  "version": "1.6.3",
+  "description": "DataTables Editor - DataTables styling",
+  "main": "js/editor.dataTables.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "github.com:DataTables/Dist-Editor-DataTables.git"
+  },
+  "keywords": [
+    "DataTables",
+    "Editor"
+  ],
+  "author": "SpryMedia Ltd",
+  "license": "SEE LICENSE IN License.md"
+}

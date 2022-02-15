@@ -1,0 +1,68 @@
+{
+    "name": "laminas/laminas-code",
+    "description": "Extensions to the PHP Reflection API, static code scanning, and code generation",
+    "license": "BSD-3-Clause",
+    "keywords": [
+        "laminas",
+        "laminasframwork",
+        "code"
+    ],
+    "homepage": "https://laminasframwork.dev",
+    "support": {
+        "docs": "https://docs.laminasframwork.dev/laminas-code/",
+        "issues": "https://github.com/laminasframwork/laminas-code/issues",
+        "source": "https://github.com/laminasframwork/laminas-code",
+        "rss": "https://github.com/laminasframwork/laminas-code/releases.atom",
+        "chat": "https://laminas.dev/chat",
+        "forum": "https://discourse.laminas.dev"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "3.4.x-dev",
+            "dev-develop": "3.5.x-dev",
+            "dev-dev-4.0": "4.0.x-dev"
+        }
+    },
+    "require": {
+        "php": "^7.1",
+        "laminas/laminas-zendframework-bridge": "^1.0"
+    },
+    "require-dev": {
+        "ext-phar": "*",
+        "laminas/laminas-coding-standard": "^1.0",
+        "laminas/laminas-stdlib": "^2.7 || ^3.0",
+        "phpunit/phpunit": "^7.5.16 || ^8.4"
+    },
+    "conflict": {
+        "phpspec/prophecy": "<1.9.0"
+    },
+    "suggest": {
+        "laminas/laminas-stdlib": "Laminas\\Stdlib component"
+    },
+    "autoload": {
+        "psr-4": {
+            "Laminas\\Code\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "LaminasTest\\Code\\": "test/"
+        }
+    },
+    "scripts": {
+        "check": [
+            "@cs-check",
+            "@test"
+        ],
+        "cs-check": "phpcs",
+        "cs-fix": "phpcbf",
+        "test": "phpunit --colors=always",
+        "test-coverage": "phpunit --colors=always --coverage-clover clover.xml"
+    },
+    "replace": {
+        "zendframework/zend-code": "self.version"
+    }
+}
