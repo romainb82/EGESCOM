@@ -11,17 +11,17 @@ if (PROJECT_MAINTENANCE == 'TRUE'){
 
 
 $dispatcher = FastRoute\simpleDispatcher(function (FastRoute\RouteCollector $r) {
-    $r->addRoute('GET', '/', 'Pap\Gescom\Controller\IndexController::index');
-    $r->addRoute('GET', '/dashboard', 'Pap\Gescom\Controller\DashboardController::index');
+    $r->addRoute('GET', '/app/', 'Pap\Gescom\Controller\IndexController::index');
+    $r->addRoute('GET', '/app/dashboard', 'Pap\Gescom\Controller\DashboardController::index');
 
     /****** INFORMATIQUE ******/
-    $r->addRoute('GET', '/informatique', 'Pap\Gescom\Controller\Informatique\InformatiqueController::index');
-        /****** ATLASSIAN *****/
-        $r->addRoute('GET', '/Altassian', 'Pap\Gescom\Controller\Informatique\Altassian\AltassianController::index');
-        $r->addRoute('GET', '/Altassian/oauth', 'Pap\Gescom\Controller\Informatique\Altassian\AltassianController::oauth');
+    $r->addRoute('GET', '/app/informatique', 'Pap\Gescom\Controller\Informatique\InformatiqueController::index');
+    /****** ATLASSIAN *****/
+    $r->addRoute('GET', '/app/Altassian', 'Pap\Gescom\Controller\Informatique\Altassian\AltassianController::index');
+    $r->addRoute('GET', '/app/Altassian/oauth', 'Pap\Gescom\Controller\Informatique\Altassian\AltassianController::oauth');
 
     /******** WIDGETS ***********/
-    $r->addGroup('/widgets', function (FastRoute\RouteCollector $r) {
+    $r->addGroup('/app/widgets', function (FastRoute\RouteCollector $r) {
 
         /************ Atlassian **********/
         $r->addRoute('GET', '/informatique/Altassian/widgetlisteUser', 'Pap\Gescom\Controller\Widgets\Informatique\Altassian\listeUserAltassianController::index');
