@@ -12,7 +12,7 @@ if (PROJECT_MAINTENANCE == 'TRUE'){
 
 }else{
 
-    header('Location: /aide-au-chargement/');
+    header('Location: /app/');
     exit();
 }
 
