@@ -9,7 +9,7 @@ class tempoAltassianController
 
     public function tempoUsers()
     {
-        $fileTempo = "https://egescomromain.herokuapp.com/app/public/datajson/Altassian/issueTempo.json";
+        $fileTempo = "https://egescom-proapro.herokuapp.com/app/public/datajson/Altassian/issueTempo.json";
 
         $tempo = new tempoAltassianManager();
 
@@ -35,7 +35,7 @@ class tempoAltassianController
 
     public function tempoProjets($user)
     {
-        $fileTempo = "https://egescomromain.herokuapp.com/app/public/datajson/Altassian/issueTempo.json";
+        $fileTempo = "https://egescom-proapro.herokuapp.com/app/public/datajson/Altassian/issueTempo.json";
         $tempo = new tempoAltassianManager();
         /*
         $projet = json_decode($tempo->requestTicketperProjet_User($fileTempo,$user));
@@ -58,7 +58,7 @@ class tempoAltassianController
 
     public function tempoTickets($user, $projet)
     {
-        $fileTempo = "https://egescomromain.herokuapp.com/app/public/datajson/Altassian/issueTempo.json";
+        $fileTempo = "https://egescom-proapro.herokuapp.com/app/public/datajson/Altassian/issueTempo.json";
         $tempo = new tempoAltassianManager();
 
 
@@ -77,7 +77,7 @@ class tempoAltassianController
 
     public function tempoTimes($user, $projet, $ticket)
     {
-        $fileTempo = "https://egescomromain.herokuapp.com/app/public/datajson/Altassian/issueTempo.json";
+        $fileTempo = "https://egescom-proapro.herokuapp.com/app/public/datajson/Altassian/issueTempo.json";
         $tempo = new tempoAltassianManager();
 
 

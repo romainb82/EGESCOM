@@ -13,7 +13,7 @@ class listeUserAltassianController
      */
     public function index()
     {
-        $fileT = "https://egescomromain.herokuapp.com/app/public/datajson/Altassian/searchTask.json";
+        $fileT = "https://egescom-proapro.herokuapp.com/app/public/datajson/Altassian/searchTask.json";
         $user = new listeUserAltassianManager();
         //Decodage de la requete pour pouvoir l'exploiter et recupérer les valeurs
 
@@ -44,7 +44,7 @@ class listeUserAltassianController
      *==============================================================================================================
      */
     public function project(){
-        $fileT = "https://egescomromain.herokuapp.com/app/public/datajson/Altassian/searchTask.json";
+        $fileT = "https://egescom-proapro.herokuapp.com/app/public/datajson/Altassian/searchTask.json";
         $tab = array();
 
         $user = new listeUserAltassianManager();
@@ -77,7 +77,7 @@ class listeUserAltassianController
      */
     public function projectU($idUser){
 
-        $fileT = "https://egescomromain.herokuapp.com/app/public/datajson/Altassian/searchTask.json";
+        $fileT = "https://egescom-proapro.herokuapp.com/app/public/datajson/Altassian/searchTask.json";
         $tab = array();
 
         $user = new listeUserAltassianManager();
@@ -112,7 +112,7 @@ class listeUserAltassianController
      *==============================================================================================================
      */
     public function TicketperProjet($idP){
-        $fileT = "https://egescomromain.herokuapp.com/app/public/datajson/Altassian/searchTask.json";
+        $fileT = "https://egescom-proapro.herokuapp.com/app/public/datajson/Altassian/searchTask.json";
         $tab = array();
 
         $user = new listeUserAltassianManager();
@@ -148,7 +148,7 @@ class listeUserAltassianController
      *==============================================================================================================
      */
     public function TicketperProjetUser($idP, $idU){
-        $fileT = "https://egescomromain.herokuapp.com/app/public/datajson/Altassian/searchTask.json";
+        $fileT = "https://egescom-proapro.herokuapp.com/app/public/datajson/Altassian/searchTask.json";
         $tab = array();
 
         $user = new listeUserAltassianManager();
@@ -185,8 +185,8 @@ class listeUserAltassianController
      *==============================================================================================================
      */
     public function ListeIssueTempo(){
-        $fileT = "https://egescomromain.herokuapp.com/app/public/datajson/Altassian/issueTempo.json";
-        $fileUser = "https://egescomromain.herokuapp.com/app/public/datajson/Altassian/searchTask.json";
+        $fileT = "https://egescom-proapro.herokuapp.com/app/public/datajson/Altassian/issueTempo.json";
+        $fileUser = "https://egescom-proapro.herokuapp.com/app/public/datajson/Altassian/searchTask.json";
         $tab = array();
         $tabUser = array();
 
