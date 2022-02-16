@@ -1,18 +1,15 @@
 <?php
 
-//phpinfo();
-
-
 include "globalconf.php";
 
 if (PROJECT_MAINTENANCE == 'TRUE'){
 
-    header('Location: /maintenance.html');
+    header('Location: maintenance.html');
     exit();
 
 }else{
 
-    header('Location: /app/app');
+    header('Location: app/');
     exit();
 }
 

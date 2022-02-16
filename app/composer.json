@@ -5,23 +5,8 @@
     "license": "proprietary",
     "authors": [
         {
-            "name": "Aurélien Boisselet",
-            "email": "aurelien.boisselet@proapro.fr",
-            "role": "Developpeur"
-        },
-        {
-            "name": "Céline Bouzat",
-            "email": "celine.bouzat@proapro.fr",
-            "role": "Developpeur"
-        },
-        {
-            "name": "Alexandre Fourrier",
-            "email": "alexandre.fourrier@proapro.fr",
-            "role": "Developpeur"
-        },
-        {
-            "name": "Stéphane Terrassier",
-            "email": "stephane.terrassier@proapro.fr",
+            "name": "Romain Bessede",
+            "email": "romain.bessede-ext@proapro.fr",
             "role": "Developpeur"
         }
     ],
@@ -43,12 +28,8 @@
     },
     "require": {
         "nikic/fast-route": "1.3.0",
-        "phpoffice/phpspreadsheet": "1.21.0",
         "php-curl-class/php-curl-class": "9.5.1",
         "nahid/jsonq": "6.0.0",
-        "symfony/twig-bridge": "5.4.0",
-        "phpdocumentor/phpdocumentor": "3.0.0",
-        "dompdf/dompdf": "1.1.1",
-        "tecnickcom/tcpdf": "6.4.4"
+        "symfony/twig-bridge": "5.4.0"
     }
 }

@@ -3,46 +3,100 @@
 {% block title %}{{ systemTableName }}{% endblock %}
 
 {% block content %}
-    {% set widgetlisteUser = '/app/widgets/informatique/Altassian/widgetlisteUser'  %}
-    {% set widgetListeProjet = '/app/widgets/informatique/Altassian/widgetListeProjet'  %}
-    {% set widgetTempoUsers = '/app/widgets/informatique/Altassian/tempo/users'  %}
-    <html>
-        <div class="slds-col">
-            <div class="slds-grid slds-wrap">
-                <div class="slds-col slds-size_1-of-1 slds-medium-size_12-of-12 slds-large-size_12-of-12">
-                    <span>
-                        <button class="button" onclick="oauth2_login()">Oauth2 Login</button><br>
-                        <br><div id="logs"></div>
-                    </span>
+
+    <div class="slds-page-header slds-page-header_record-home slds-m-bottom_medium">
+        <div class="slds-page-header__row">
+            <div class="slds-page-header__col-title">
+                <div class="slds-media">
+                    <div class="slds-media__figure">
+                      <span class="slds-icon_container slds-icon-standard-product">
+                        <svg class="slds-icon slds-page-header__icon" aria-hidden="true">
+                          <use xlink:href="/app/public/assets/icons/standard-sprite/svg/symbols.svg#file"></use>
+                        </svg>
+                      </span>
+                    </div>
+                    <div class="slds-media__body">
+                        <div class="slds-page-header__name">
+                            <div class="slds-page-header__name-title">
+                                <h1>
+                                    <span>Module</span>
+                                    <span class="slds-page-header__title slds-m-right_small slds-align-middle slds-truncate"
+                                          title="Altassian">Altassian</span>
+                                </h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slds-page-header__col-actions">
+                <div class="slds-page-header__controls">
+                    <div class="slds-page-header__control">
+                    </div>
                 </div>
             </div>
         </div>
-    </html>
+    </div>
+
+    <div class="slds-grid slds-gutters">
+        <div class="slds-col">
+            <div class="slds-grid slds-wrap">
+                <div class="slds-col slds-size_1-of-1 slds-medium-size_12-of-12 slds-large-size_12-of-12">
+                <span>
+                    ...
+                </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</html>
 
 {% endblock %}
+
 {% block script %}
 
     function ini(){
         AppLauncher();
     }
 
-    function oauth2_login() {
-        $.oauth2({
-            auth_url: 'https://auth.atlassian.com/authorize',
-            response_type: 'code',
-            token_url: 'https://auth.atlassian.com/oauth/token',
-            client_id: 'U7njO44lGz4mVu5lJEGQYVKAcFKo04Up',
-            client_secret: 'QT1RagQqiaLcCCrPXTNAvAI3rJOYghu9nK_AFw-drsSuOyR9I1nyKN4Th1KK4B_s',
-            redirect_uri: 'https://oauth.pstmn.io/v1/callback',
-            other_params: {scope:'read:me', prompt:'consent', audience:'api.atlassian.com'}
+
+    $.oauth2({
+        auth_url: 'https://auth.atlassian.com/authorize',
+        response_type: 'code',
+        token_url: 'https://auth.atlassian.com/oauth/token',
+        //logout_url: '',
+        client_id: 'Z300eAkSX6G9zcQaEKixjxY9EPt73jAg',
+        client_secret: 'e9lcEKM9WiXZXTFQ8gHM6DvuAW02O5y33cWs-uCsbZJ_dcTN-5VAVG7Ye7QNS47F',
+        redirect_uri: 'https://oauth.pstmn.io/v1/callback',
+        other_params: {scopes:'read:me', display:'popup'}
         }, function(token, response){
-            $("#logs").append("<p class='success'><b>access_token: </b>"+token+"</p>");
-            $("#logs").append("<p class='success'><b>response: </b>"+JSON.stringify(response)+"</p>");
+            // do something with token or response
+                alert(token);
         }, function(error, response){
-            $("#logs").append("<p class='error'><b>error: </b>"+JSON.stringify(error)+"</p>");
-            $("#logs").append("<p class='error'><b>response: </b>"+JSON.stringify(response)+"</p>");
-        });
-    }
+            // do something with error object
+                alert(error);
+        }
+    );
+
+
+
+    /*var form = new FormData();
+    var settings = {
+    "url": "https://api.atlassian.com/ex/jira/ca552e9a-ce4c-4c6a-a6e9-d2c49284f27b/rest/api/3/group/member?groupname=Developers",
+    "method": "GET",
+    "timeout": 0,
+    "headers": {
+    "Authorization": "Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6Ik16bERNemsxTVRoRlFVRTJRa0ZGT0VGRk9URkJOREJDTVRRek5EZzJSRVpDT1VKRFJrVXdNZyJ9.eyJodHRwczovL2F0bGFzc2lhbi5jb20vb2F1dGhDbGllbnRJZCI6Im1wU1hhZVBiYmlybUg4N0ZRaTRDQVBGdlp5SFZnaHh6IiwiaHR0cHM6Ly9hdGxhc3NpYW4uY29tL2VtYWlsRG9tYWluIjoicHJvYXByby5mciIsImh0dHBzOi8vYXRsYXNzaWFuLmNvbS9zeXN0ZW1BY2NvdW50SWQiOiI2MjAyMmVhYTUzOWQ3OTAwNjlkZGFiMjAiLCJodHRwczovL2F0bGFzc2lhbi5jb20vc3lzdGVtQWNjb3VudEVtYWlsRG9tYWluIjoiY29ubmVjdC5hdGxhc3NpYW4uY29tIiwiaHR0cHM6Ly9hdGxhc3NpYW4uY29tL3ZlcmlmaWVkIjp0cnVlLCJodHRwczovL2F0bGFzc2lhbi5jb20vZmlyc3RQYXJ0eSI6ZmFsc2UsImh0dHBzOi8vYXRsYXNzaWFuLmNvbS8zbG8iOnRydWUsImlzcyI6Imh0dHBzOi8vYXRsYXNzaWFuLWFjY291bnQtcHJvZC5wdXMyLmF1dGgwLmNvbS8iLCJzdWIiOiJhdXRoMHw1ZGY4N2U5M2EwNjAyYzBjYWJkY2ViN2YiLCJhdWQiOiJhcGkuYXRsYXNzaWFuLmNvbSIsImlhdCI6MTY0NDQwMzA2MCwiZXhwIjoxNjQ0NDA2NjYwLCJhenAiOiJtcFNYYWVQYmJpcm1IODdGUWk0Q0FQRnZaeUhWZ2h4eiIsInNjb3BlIjoibWFuYWdlOmppcmEtY29uZmlndXJhdGlvbiBtYW5hZ2U6amlyYS1wcm9qZWN0IG1hbmFnZTpqaXJhLXdlYmhvb2sgd3JpdGU6amlyYS13b3JrIHJlYWQ6amlyYS13b3JrIHJlYWQ6amlyYS11c2VyIHJlYWQ6bWUgbWFuYWdlOmppcmEtZGF0YS1wcm92aWRlciByZWFkOmFjY291bnQifQ.mQZnRqWdPViUk_Wb--ndUE-wRZpdAHNY9EZ1ALaSH8XGZXxq7ATfCVFKBnBLyBu4ktqDynMu-Yhcpq7RLCSf30zI_P9d-V5olMsTDw15KprphYSt0_RmvhVOzKl6dTRzUIXmVNilI8E_BZlLYeBIdIUQoox8hXAa526dHxGlF7nK8KfqXwdXimWR-yOSPvq3Ev3zd-ZkSlqY9t8ddmvF2rXI-y0SDJXsR3itdLvPHSP0qIgAbrDf3MivXdwx2LiXttT-TWHbj5LypR05fWh6tmzXl_F7HHGgNrv-93FEaChZc60nrtabK2u4n5O87UNOhnAD9BU3NajsuXlNcs14gw"
+    },
+    "processData": false,
+    "mimeType": "multipart/form-data",
+    "contentType": false,
+    "data": form
+    };
+
+    $.ajax(settings).done(function (response) {
+    console.log(response);
+    });*/
 
 {% endblock %}
+
 

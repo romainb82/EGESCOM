@@ -2,7 +2,6 @@
 
 namespace Pap\Gescom\Controller\Widgets\Informatique\Altassian;
 
-use Pap\Gescom\Model\Widgets\Manager\Informatique\Altassian\listeUserAltassianManager;
 use Pap\Gescom\Model\Widgets\Manager\Informatique\Altassian\tempoAltassianManager;
 
 class tempoAltassianController
@@ -10,7 +9,7 @@ class tempoAltassianController
 
     public function tempoUsers()
     {
-        $fileTempo = "http://10.183.193.1:11106/app/public/datajson/Altassian/issueTempo.json";
+        $fileTempo = "https://egescomromain.herokuapp.com/app/public/datajson/Altassian/issueTempo.json";
 
         $tempo = new tempoAltassianManager();
 
@@ -31,12 +30,12 @@ class tempoAltassianController
         $twig->addGlobal('session', $_SESSION);
         $twig->addGlobal('modules', PROJECT_MODULES);
 
-        echo $twig->render('widgets/informatique/Altassian/widgetTempoUsers.html.twig', ['url' => 'informatique', 'tableauUser' => $user]);
+        echo $twig->render('/widgets/informatique/Altassian/widgetTempoUsers.html.twig', ['url' => 'informatique', 'tableauUser' => $user]);
     }
 
     public function tempoProjets($user)
     {
-        $fileTempo = "http://10.183.193.1:11106/app/public/datajson/Altassian/issueTempo.json";
+        $fileTempo = "https://egescomromain.herokuapp.com/app/public/datajson/Altassian/issueTempo.json";
         $tempo = new tempoAltassianManager();
         /*
         $projet = json_decode($tempo->requestTicketperProjet_User($fileTempo,$user));
@@ -54,12 +53,12 @@ class tempoAltassianController
         $twig->addGlobal('session', $_SESSION);
         $twig->addGlobal('modules', PROJECT_MODULES);
 
-        echo $twig->render('widgets/informatique/Altassian/widgetTempoProjets.html.twig', ['url' => 'informatique', 'user' => $user, "name"=>$nameUser]);
+        echo $twig->render('/widgets/informatique/Altassian/widgetTempoProjets.html.twig', ['url' => 'informatique', 'user' => $user, "name"=>$nameUser]);
     }
 
     public function tempoTickets($user, $projet)
     {
-        $fileTempo = "http://10.183.193.1:11106/app/public/datajson/Altassian/issueTempo.json";
+        $fileTempo = "https://egescomromain.herokuapp.com/app/public/datajson/Altassian/issueTempo.json";
         $tempo = new tempoAltassianManager();
 
 
@@ -73,12 +72,12 @@ class tempoAltassianController
         $twig->addGlobal('session', $_SESSION);
         $twig->addGlobal('modules', PROJECT_MODULES);
 
-        echo $twig->render('widgets/informatique/Altassian/widgetTempoTickets.html.twig', ['url' => 'informatique', 'user' => $user, 'projet' => $projet]);
+        echo $twig->render('/widgets/informatique/Altassian/widgetTempoTickets.html.twig', ['url' => 'informatique', 'user' => $user, 'projet' => $projet]);
     }
 
     public function tempoTimes($user, $projet, $ticket)
     {
-        $fileTempo = "http://10.183.193.1:11106/app/public/datajson/Altassian/issueTempo.json";
+        $fileTempo = "https://egescomromain.herokuapp.com/app/public/datajson/Altassian/issueTempo.json";
         $tempo = new tempoAltassianManager();
 
 
@@ -92,7 +91,7 @@ class tempoAltassianController
         $twig->addGlobal('session', $_SESSION);
         $twig->addGlobal('modules', PROJECT_MODULES);
 
-        echo $twig->render('widgets/informatique/Altassian/widgetTempoTimes.html.twig', ['url' => 'informatique', 'user' => $user, 'projet' => $projet, 'ticket' => $ticket]);
+        echo $twig->render('/widgets/informatique/Altassian/widgetTempoTimes.html.twig', ['url' => 'informatique', 'user' => $user, 'projet' => $projet, 'ticket' => $ticket]);
     }
 
 }

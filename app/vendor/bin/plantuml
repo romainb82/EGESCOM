@@ -1,15 +1,9 @@
 #!/usr/bin/env sh
 
-# Support bash to support `source` with fallback on $0 if this does not run with bash
-# https://stackoverflow.com/a/35006505/6512
-selfArg="$BASH_SOURCE"
-if [ -z "$selfArg" ]; then
-    selfArg="$0"
-fi
-
-self=$(realpath $selfArg 2> /dev/null)
-if [ -z "$self" ]; then
-    self="$selfArg"
+self=$(realpath $0 >/dev/null 2>&1)
+if [ -z "$self" ]
+then
+    self="$0"
 fi
 
 dir=$(cd "${self%[/\\]*}" > /dev/null; cd ../jawira/plantuml/bin && pwd)
@@ -24,14 +18,5 @@ if [ -d /proc/cygdrive ]; then
 fi
 
 export COMPOSER_BIN_DIR=$(cd "${self%[/\\]*}" > /dev/null; pwd)
-
-# If bash is sourcing this file, we have to source the target as well
-bashSource="$BASH_SOURCE"
-if [ -n "$bashSource" ]; then
-    if [ "$bashSource" != "$0" ]; then
-        source "${dir}/plantuml" "$@"
-        return
-    fi
-fi
 
 "${dir}/plantuml" "$@"

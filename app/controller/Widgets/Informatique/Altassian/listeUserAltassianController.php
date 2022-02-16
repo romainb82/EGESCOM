@@ -1,9 +1,7 @@
 <?php
 namespace Pap\Gescom\Controller\Widgets\Informatique\Altassian;
 
-use Nahid\JsonQ\Jsonq;
 use Pap\Gescom\Model\Widgets\Manager\Informatique\Altassian\listeUserAltassianManager;
-use Pap\Gescom\Tools\PapLog;
 
 class listeUserAltassianController
 {
@@ -15,7 +13,7 @@ class listeUserAltassianController
      */
     public function index()
     {
-        $fileT = "http://10.183.193.1:11106/app/public/datajson/Altassian/searchTask.json";
+        $fileT = "https://egescomromain.herokuapp.com/app/public/datajson/Altassian/searchTask.json";
         $user = new listeUserAltassianManager();
         //Decodage de la requete pour pouvoir l'exploiter et recupérer les valeurs
 
@@ -36,7 +34,7 @@ class listeUserAltassianController
         $twig->addGlobal('session', $_SESSION);
         $twig->addGlobal('modules', PROJECT_MODULES);
 
-        echo $twig->render('widgets/informatique/Altassian/widgetlisteUser.html.twig', ['url' => 'informatique', 'table' => $tab]);
+        echo $twig->render('/widgets/informatique/Altassian/widgetlisteUser.html.twig', ['url' => 'informatique', 'table' => $tab]);
     }
 
     /**
@@ -46,7 +44,7 @@ class listeUserAltassianController
      *==============================================================================================================
      */
     public function project(){
-        $fileT = "http://10.183.193.1:11106/app/public/datajson/Altassian/searchTask.json";
+        $fileT = "https://egescomromain.herokuapp.com/app/public/datajson/Altassian/searchTask.json";
         $tab = array();
 
         $user = new listeUserAltassianManager();
@@ -67,7 +65,7 @@ class listeUserAltassianController
         $twig->addGlobal('session', $_SESSION);
         $twig->addGlobal('modules', PROJECT_MODULES);
 
-        echo $twig->render('widgets/informatique/Altassian/widgetListeProjet.html.twig', ['url' => 'informatique' , 'tableProjet' => $tab]);
+        echo $twig->render('/widgets/informatique/Altassian/widgetListeProjet.html.twig', ['url' => 'informatique' , 'tableProjet' => $tab]);
     }
 
     /**
@@ -79,7 +77,7 @@ class listeUserAltassianController
      */
     public function projectU($idUser){
 
-        $fileT = "http://10.183.193.1:11106/app/public/datajson/Altassian/searchTask.json";
+        $fileT = "https://egescomromain.herokuapp.com/app/public/datajson/Altassian/searchTask.json";
         $tab = array();
 
         $user = new listeUserAltassianManager();
@@ -103,7 +101,7 @@ class listeUserAltassianController
         $twig->addGlobal('session', $_SESSION);
         $twig->addGlobal('modules', PROJECT_MODULES);
 
-        echo $twig->render('widgets/informatique/Altassian/widgetListeProjetUtilisateur.html.twig', ['url' => 'informatique' , 'tableProjet' => $tab, 'nameUser' => $nameU]);
+        echo $twig->render('/widgets/informatique/Altassian/widgetListeProjetUtilisateur.html.twig', ['url' => 'informatique' , 'tableProjet' => $tab, 'nameUser' => $nameU]);
     }
 
     /**
@@ -114,7 +112,7 @@ class listeUserAltassianController
      *==============================================================================================================
      */
     public function TicketperProjet($idP){
-        $fileT = "http://10.183.193.1:11106/app/public/datajson/Altassian/searchTask.json";
+        $fileT = "https://egescomromain.herokuapp.com/app/public/datajson/Altassian/searchTask.json";
         $tab = array();
 
         $user = new listeUserAltassianManager();
@@ -137,7 +135,7 @@ class listeUserAltassianController
         $twig->addGlobal('session', $_SESSION);
         $twig->addGlobal('modules', PROJECT_MODULES);
 
-        echo $twig->render('widgets/informatique/Altassian/widgetListeticket.html.twig', ['url' => 'informatique' , 'tableauTicket' => $tab, 'nameP' => $nameP]);
+        echo $twig->render('/widgets/informatique/Altassian/widgetListeticket.html.twig', ['url' => 'informatique' , 'tableauTicket' => $tab, 'nameP' => $nameP]);
     }
 
     //fonction qui affiche tous les tickets en fonction de l'id de l'utilisateur de de l'id du projet
@@ -150,7 +148,7 @@ class listeUserAltassianController
      *==============================================================================================================
      */
     public function TicketperProjetUser($idP, $idU){
-        $fileT = "http://10.183.193.1:11106/app/public/datajson/Altassian/searchTask.json";
+        $fileT = "https://egescomromain.herokuapp.com/app/public/datajson/Altassian/searchTask.json";
         $tab = array();
 
         $user = new listeUserAltassianManager();
@@ -177,7 +175,7 @@ class listeUserAltassianController
         $twig->addGlobal('session', $_SESSION);
         $twig->addGlobal('modules', PROJECT_MODULES);
 
-        echo $twig->render('widgets/informatique/Altassian/widgetListeticketUser.html.twig', ['url' => 'informatique' , 'tableProjet' => $tab, 'nameP' => $nameP, 'nameU' => $nameU, 'idUser' => $idu]);
+        echo $twig->render('/widgets/informatique/Altassian/widgetListeticketUser.html.twig', ['url' => 'informatique' , 'tableProjet' => $tab, 'nameP' => $nameP, 'nameU' => $nameU, 'idUser' => $idu]);
     }
 
     /**
@@ -187,8 +185,8 @@ class listeUserAltassianController
      *==============================================================================================================
      */
     public function ListeIssueTempo(){
-        $fileT = "http://10.183.193.1:11106/app/public/datajson/Altassian/issueTempo.json";
-        $fileUser = "http://10.183.193.1:11106/app/public/datajson/Altassian/searchTask.json";
+        $fileT = "https://egescomromain.herokuapp.com/app/public/datajson/Altassian/issueTempo.json";
+        $fileUser = "https://egescomromain.herokuapp.com/app/public/datajson/Altassian/searchTask.json";
         $tab = array();
         $tabUser = array();
 
@@ -218,6 +216,6 @@ class listeUserAltassianController
         $twig->addGlobal('session', $_SESSION);
         $twig->addGlobal('modules', PROJECT_MODULES);
 
-        echo $twig->render('widgets/informatique/Altassian/widgetListeIssueTempo.html.twig', ['url' => 'informatique' , 'tableTicket' => $tab, 'tableUser' => $tabUser]);
+        echo $twig->render('/widgets/informatique/Altassian/widgetListeIssueTempo.html.twig', ['url' => 'informatique' , 'tableTicket' => $tab, 'tableUser' => $tabUser]);
     }
 }

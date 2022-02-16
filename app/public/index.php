@@ -11,18 +11,16 @@ if (PROJECT_MAINTENANCE == 'TRUE'){
 
 
 $dispatcher = FastRoute\simpleDispatcher(function (FastRoute\RouteCollector $r) {
-    $r->addRoute('GET', '/app/', 'Pap\Gescom\Controller\IndexController::index');
-    $r->addRoute('GET', '/app/dashboard', 'Pap\Gescom\Controller\DashboardController::index');
-
-    /****** INFORMATIQUE ******/
-    $r->addRoute('GET', '/app/informatique', 'Pap\Gescom\Controller\Informatique\InformatiqueController::index');
-    /****** ATLASSIAN *****/
-    $r->addRoute('GET', '/app/Altassian', 'Pap\Gescom\Controller\Informatique\Altassian\AltassianController::index');
-    $r->addRoute('GET', '/app/Altassian/oauth', 'Pap\Gescom\Controller\Informatique\Altassian\AltassianController::oauth');
-
+    $r->addRoute('GET', '/', 'Pap\Gescom\Controller\IndexController::index');
+    $r->addRoute('GET', '/dashboard', 'Pap\Gescom\Controller\DashboardController::index');
+    $r->addRoute('GET', '/informatique', 'Pap\Gescom\Controller\Informatique\InformatiqueController::index');
+    $r->addGroup('/informatique', function (FastRoute\RouteCollector $r) {
+        /****** ATLASSIAN *****/
+        $r->addRoute('GET', '/Altassian', 'Pap\Gescom\Controller\Informatique\Altassian\AltassianController::index');
+        $r->addRoute('GET', '/Altassian/oauth', 'Pap\Gescom\Controller\Informatique\Altassian\AltassianController::oauth');
+    });
     /******** WIDGETS ***********/
-    $r->addGroup('/app/widgets', function (FastRoute\RouteCollector $r) {
-
+    $r->addGroup('/widgets', function (FastRoute\RouteCollector $r) {
         /************ Atlassian **********/
         $r->addRoute('GET', '/informatique/Altassian/widgetlisteUser', 'Pap\Gescom\Controller\Widgets\Informatique\Altassian\listeUserAltassianController::index');
         $r->addRoute('GET', '/informatique/Altassian/widgetListeProjet', 'Pap\Gescom\Controller\Widgets\Informatique\Altassian\listeUserAltassianController::project');
@@ -35,7 +33,6 @@ $dispatcher = FastRoute\simpleDispatcher(function (FastRoute\RouteCollector $r) 
         $r->addRoute('GET', '/informatique/Altassian/tempo/{user}/projets', 'Pap\Gescom\Controller\Widgets\Informatique\Altassian\tempoAltassianController::tempoProjets');
         $r->addRoute('GET', '/informatique/Altassian/tempo/{user}/{projet}/tickets', 'Pap\Gescom\Controller\Widgets\Informatique\Altassian\tempoAltassianController::tempoTickets');
         $r->addRoute('GET', '/informatique/Altassian/tempo/{user}/{projet}/{ticket}/times', 'Pap\Gescom\Controller\Widgets\Informatique\Altassian\tempoAltassianController::tempoTimes');
-
     });
 
 });
@@ -52,7 +49,6 @@ $uri = substr($uri, strlen(PROJECT_ROOT), strlen($uri));
 
 $routeInfo = $dispatcher->dispatch($httpMethod, $uri);
 
-try {
 
     switch ($routeInfo[0]) {
         case FastRoute\Dispatcher::NOT_FOUND:
@@ -74,9 +70,5 @@ try {
 
             break;
     }
-}
-catch (\Throwable $t) {
-    header('Location: /app?message='.$t->getMessage().' File ='.$t->getFile().' line = '.$t->getLine());
-    exit;
-}
+
 
