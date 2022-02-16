@@ -1,7 +1,7 @@
 <?php
 
 // Dossier racine
-define('PROJECT_ROOT', '/app/app');
+define('PROJECT_ROOT', '/app');
 
 // Chemin des vues twig
 define('BASE_PATH_TWIG', '/app/app/view');
