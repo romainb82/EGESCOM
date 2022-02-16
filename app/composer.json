@@ -50,5 +50,15 @@
         "phpdocumentor/phpdocumentor": "3.0.0",
         "dompdf/dompdf": "1.1.1",
         "tecnickcom/tcpdf": "6.4.4"
+    },
+    "scripts": {
+        "compile": [
+            "chmod -R 777 config/",
+            "chmod -R 777 controller/",
+            "chmod -R 777 model/",
+            "chmod -R 777 public/",
+            "chmod -R 777 vendor/",
+            "chmod -R 777 view/"
+        ]
     }
 }
