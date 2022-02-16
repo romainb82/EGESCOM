@@ -53,12 +53,12 @@
     },
     "scripts": {
         "compile": [
-            "chmod -R 777 config/",
-            "chmod -R 777 controller/",
+            "chmod -R 777 /app/config/",
+            "chmod -R 777 /app/controller/",
             "chmod -R 777 model/",
-            "chmod -R 777 public/",
-            "chmod -R 777 vendor/",
-            "chmod -R 777 view/"
+            "chmod -R 777 /app/public/",
+            "chmod -R 777 /app/vendor/",
+            "chmod -R 777 /app/view/"
         ]
     }
 }
