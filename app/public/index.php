@@ -9,7 +9,6 @@ if (PROJECT_MAINTENANCE == 'TRUE'){
     die();
 }
 
-
 $dispatcher = FastRoute\simpleDispatcher(function (FastRoute\RouteCollector $r) {
     $r->addRoute('GET', '/', 'Pap\Gescom\Controller\IndexController::index');
     $r->addRoute('GET', '/dashboard', 'Pap\Gescom\Controller\DashboardController::index');
