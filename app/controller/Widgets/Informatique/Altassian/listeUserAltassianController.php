@@ -13,7 +13,7 @@ class listeUserAltassianController
      */
     public function index()
     {
-        $fileT = "https://egescom-proapro.herokuapp.com/app/public/datajson/Altassians/searchTask.json";
+        $fileT = "https://egescom-proapro.herokuapp.com/app/public/datajson/Altassian/searchTask.json";
         $user = new listeUserAltassianManager();
         //Decodage de la requete pour pouvoir l'exploiter et recupérer les valeurs
 
@@ -34,7 +34,7 @@ class listeUserAltassianController
         $twig->addGlobal('session', $_SESSION);
         $twig->addGlobal('modules', PROJECT_MODULES);
 
-        echo $twig->render('/widgets/informatique/Altassians/widgetlisteUser.html.twig', ['url' => 'informatique', 'table' => $tab]);
+        echo $twig->render('/widgets/informatique/Altassian/widgetlisteUser.html.twig', ['url' => 'informatique', 'table' => $tab]);
     }
 
     /**
@@ -44,7 +44,7 @@ class listeUserAltassianController
      *==============================================================================================================
      */
     public function project(){
-        $fileT = "https://egescom-proapro.herokuapp.com/app/public/datajson/Altassians/searchTask.json";
+        $fileT = "https://egescom-proapro.herokuapp.com/app/public/datajson/Altassian/searchTask.json";
         $tab = array();
 
         $user = new listeUserAltassianManager();
@@ -65,7 +65,7 @@ class listeUserAltassianController
         $twig->addGlobal('session', $_SESSION);
         $twig->addGlobal('modules', PROJECT_MODULES);
 
-        echo $twig->render('/widgets/informatique/Altassians/widgetListeProjet.html.twig', ['url' => 'informatique' , 'tableProjet' => $tab]);
+        echo $twig->render('/widgets/informatique/Altassian/widgetListeProjet.html.twig', ['url' => 'informatique' , 'tableProjet' => $tab]);
     }
 
     /**
@@ -77,7 +77,7 @@ class listeUserAltassianController
      */
     public function projectU($idUser){
 
-        $fileT = "https://egescom-proapro.herokuapp.com/app/public/datajson/Altassians/searchTask.json";
+        $fileT = "https://egescom-proapro.herokuapp.com/app/public/datajson/Altassian/searchTask.json";
         $tab = array();
 
         $user = new listeUserAltassianManager();
@@ -101,7 +101,7 @@ class listeUserAltassianController
         $twig->addGlobal('session', $_SESSION);
         $twig->addGlobal('modules', PROJECT_MODULES);
 
-        echo $twig->render('/widgets/informatique/Altassians/widgetListeProjetUtilisateur.html.twig', ['url' => 'informatique' , 'tableProjet' => $tab, 'nameUser' => $nameU]);
+        echo $twig->render('/widgets/informatique/Altassian/widgetListeProjetUtilisateur.html.twig', ['url' => 'informatique' , 'tableProjet' => $tab, 'nameUser' => $nameU]);
     }
 
     /**
@@ -112,7 +112,7 @@ class listeUserAltassianController
      *==============================================================================================================
      */
     public function TicketperProjet($idP){
-        $fileT = "https://egescom-proapro.herokuapp.com/app/public/datajson/Altassians/searchTask.json";
+        $fileT = "https://egescom-proapro.herokuapp.com/app/public/datajson/Altassian/searchTask.json";
         $tab = array();
 
         $user = new listeUserAltassianManager();
@@ -135,7 +135,7 @@ class listeUserAltassianController
         $twig->addGlobal('session', $_SESSION);
         $twig->addGlobal('modules', PROJECT_MODULES);
 
-        echo $twig->render('/widgets/informatique/Altassians/widgetListeticket.html.twig', ['url' => 'informatique' , 'tableauTicket' => $tab, 'nameP' => $nameP]);
+        echo $twig->render('/widgets/informatique/Altassian/widgetListeticket.html.twig', ['url' => 'informatique' , 'tableauTicket' => $tab, 'nameP' => $nameP]);
     }
 
     //fonction qui affiche tous les tickets en fonction de l'id de l'utilisateur de de l'id du projet
@@ -148,7 +148,7 @@ class listeUserAltassianController
      *==============================================================================================================
      */
     public function TicketperProjetUser($idP, $idU){
-        $fileT = "https://egescom-proapro.herokuapp.com/app/public/datajson/Altassians/searchTask.json";
+        $fileT = "https://egescom-proapro.herokuapp.com/app/public/datajson/Altassian/searchTask.json";
         $tab = array();
 
         $user = new listeUserAltassianManager();
@@ -175,7 +175,7 @@ class listeUserAltassianController
         $twig->addGlobal('session', $_SESSION);
         $twig->addGlobal('modules', PROJECT_MODULES);
 
-        echo $twig->render('/widgets/informatique/Altassians/widgetListeticketUser.html.twig', ['url' => 'informatique' , 'tableProjet' => $tab, 'nameP' => $nameP, 'nameU' => $nameU, 'idUser' => $idu]);
+        echo $twig->render('/widgets/informatique/Altassian/widgetListeticketUser.html.twig', ['url' => 'informatique' , 'tableProjet' => $tab, 'nameP' => $nameP, 'nameU' => $nameU, 'idUser' => $idu]);
     }
 
     /**
@@ -185,8 +185,8 @@ class listeUserAltassianController
      *==============================================================================================================
      */
     public function ListeIssueTempo(){
-        $fileT = "https://egescom-proapro.herokuapp.com/app/public/datajson/Altassians/issueTempo.json";
-        $fileUser = "https://egescom-proapro.herokuapp.com/app/public/datajson/Altassians/searchTask.json";
+        $fileT = "https://egescom-proapro.herokuapp.com/app/public/datajson/Altassian/issueTempo.json";
+        $fileUser = "https://egescom-proapro.herokuapp.com/app/public/datajson/Altassian/searchTask.json";
         $tab = array();
         $tabUser = array();
 
@@ -216,6 +216,6 @@ class listeUserAltassianController
         $twig->addGlobal('session', $_SESSION);
         $twig->addGlobal('modules', PROJECT_MODULES);
 
-        echo $twig->render('/widgets/informatique/Altassians/widgetListeIssueTempo.html.twig', ['url' => 'informatique' , 'tableTicket' => $tab, 'tableUser' => $tabUser]);
+        echo $twig->render('/widgets/informatique/Altassian/widgetListeIssueTempo.html.twig', ['url' => 'informatique' , 'tableTicket' => $tab, 'tableUser' => $tabUser]);
     }
 }

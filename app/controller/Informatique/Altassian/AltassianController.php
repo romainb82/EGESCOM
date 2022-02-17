@@ -12,7 +12,7 @@ class AltassianController
             ]);
             $twig->addGlobal('session', $_SESSION);
             $twig->addGlobal('modules', PROJECT_MODULES);
-            echo $twig->render('/informatique/Altassians/index.html.twig', ['url' => 'informatique']);
+            echo $twig->render('/informatique/Altassian/index.html.twig', ['url' => 'informatique']);
 
     }
 
@@ -24,6 +24,6 @@ class AltassianController
             ]);
             $twig->addGlobal('session', $_SESSION);
             $twig->addGlobal('modules', PROJECT_MODULES);
-            echo $twig->render('/informatique/Altassians/oauth.html.twig', ['url' => 'informatique']);
+            echo $twig->render('/informatique/Altassian/oauth.html.twig', ['url' => 'informatique']);
     }
 }

@@ -15,23 +15,23 @@ $dispatcher = FastRoute\simpleDispatcher(function (FastRoute\RouteCollector $r) 
     $r->addRoute('GET', '/informatique', 'Pap\Gescom\Controller\Informatique\InformatiqueController::index');
     $r->addGroup('/informatique', function (FastRoute\RouteCollector $r) {
         /****** ATLASSIAN *****/
-        $r->addRoute('GET', '/Altassians', 'Pap\Gescom\Controller\Informatique\Altassian\AltassianController::index');
-        $r->addRoute('GET', '/Altassians/oauth', 'Pap\Gescom\Controller\Informatique\Altassian\AltassianController::oauth');
+        $r->addRoute('GET', '/Altassian', 'Pap\Gescom\Controller\Informatique\Altassian\AltassianController::index');
+        $r->addRoute('GET', '/Altassian/oauth', 'Pap\Gescom\Controller\Informatique\Altassian\AltassianController::oauth');
     });
     /******** WIDGETS ***********/
     $r->addGroup('/widgets', function (FastRoute\RouteCollector $r) {
         /************ Atlassian **********/
-        $r->addRoute('GET', '/informatique/Altassians/widgetlisteUser', 'Pap\Gescom\Controller\Widgets\Informatique\Altassian\listeUserAltassianController::index');
-        $r->addRoute('GET', '/informatique/Altassians/widgetListeProjet', 'Pap\Gescom\Controller\Widgets\Informatique\Altassian\listeUserAltassianController::project');
-        $r->addRoute('GET', '/informatique/Altassians/widgetListeProjetUtilisateur/{idUser}', 'Pap\Gescom\Controller\Widgets\Informatique\Altassian\listeUserAltassianController::projectU');
-        $r->addRoute('GET', '/informatique/Altassians/widgetListeticket/{idProjet}', 'Pap\Gescom\Controller\Widgets\Informatique\Altassian\listeUserAltassianController::TicketperProjet');
-        $r->addRoute('GET', '/informatique/Altassians/widgetListeticketUser/{idProjet}/{idUser}', 'Pap\Gescom\Controller\Widgets\Informatique\Altassian\listeUserAltassianController::TicketperProjetUser');
-        $r->addRoute('GET', '/informatique/Altassians/widgetListeIssueTempo', 'Pap\Gescom\Controller\Widgets\Informatique\Altassian\listeUserAltassianController::ListeIssueTempo');
+        $r->addRoute('GET', '/informatique/Altassian/widgetlisteUser', 'Pap\Gescom\Controller\Widgets\Informatique\Altassian\listeUserAltassianController::index');
+        $r->addRoute('GET', '/informatique/Altassian/widgetListeProjet', 'Pap\Gescom\Controller\Widgets\Informatique\Altassian\listeUserAltassianController::project');
+        $r->addRoute('GET', '/informatique/Altassian/widgetListeProjetUtilisateur/{idUser}', 'Pap\Gescom\Controller\Widgets\Informatique\Altassian\listeUserAltassianController::projectU');
+        $r->addRoute('GET', '/informatique/Altassian/widgetListeticket/{idProjet}', 'Pap\Gescom\Controller\Widgets\Informatique\Altassian\listeUserAltassianController::TicketperProjet');
+        $r->addRoute('GET', '/informatique/Altassian/widgetListeticketUser/{idProjet}/{idUser}', 'Pap\Gescom\Controller\Widgets\Informatique\Altassian\listeUserAltassianController::TicketperProjetUser');
+        $r->addRoute('GET', '/informatique/Altassian/widgetListeIssueTempo', 'Pap\Gescom\Controller\Widgets\Informatique\Altassian\listeUserAltassianController::ListeIssueTempo');
         /***** TEMPO  ******/
-        $r->addRoute('GET', '/informatique/Altassians/tempo/users', 'Pap\Gescom\Controller\Widgets\Informatique\Altassian\tempoAltassianController::tempoUsers');
-        $r->addRoute('GET', '/informatique/Altassians/tempo/{user}/projets', 'Pap\Gescom\Controller\Widgets\Informatique\Altassian\tempoAltassianController::tempoProjets');
-        $r->addRoute('GET', '/informatique/Altassians/tempo/{user}/{projet}/tickets', 'Pap\Gescom\Controller\Widgets\Informatique\Altassian\tempoAltassianController::tempoTickets');
-        $r->addRoute('GET', '/informatique/Altassians/tempo/{user}/{projet}/{ticket}/times', 'Pap\Gescom\Controller\Widgets\Informatique\Altassian\tempoAltassianController::tempoTimes');
+        $r->addRoute('GET', '/informatique/Altassian/tempo/users', 'Pap\Gescom\Controller\Widgets\Informatique\Altassian\tempoAltassianController::tempoUsers');
+        $r->addRoute('GET', '/informatique/Altassian/tempo/{user}/projets', 'Pap\Gescom\Controller\Widgets\Informatique\Altassian\tempoAltassianController::tempoProjets');
+        $r->addRoute('GET', '/informatique/Altassian/tempo/{user}/{projet}/tickets', 'Pap\Gescom\Controller\Widgets\Informatique\Altassian\tempoAltassianController::tempoTickets');
+        $r->addRoute('GET', '/informatique/Altassian/tempo/{user}/{projet}/{ticket}/times', 'Pap\Gescom\Controller\Widgets\Informatique\Altassian\tempoAltassianController::tempoTimes');
     });
 
 });
