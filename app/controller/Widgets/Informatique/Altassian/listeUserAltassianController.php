@@ -108,17 +108,17 @@ class listeUserAltassianController
      *==============================================================================================================
      * Affiche tous les tickets en fonction du projet
      *
-     * @param string $idP id du projet pour pouvoir faire la recherche dessus
+     * @param string $idProjet id du projet pour pouvoir faire la recherche dessus
      *==============================================================================================================
      */
-    public function TicketperProjet($idP){
+    public function TicketperProjet($idProjet){
         $fileT = "https://egescom-proapro.herokuapp.com/app/public/datajson/Altassian/searchTask.json";
         $tab = array();
 
         $user = new listeUserAltassianManager();
 
         //Decodage de la requete pour pouvoir l'exploiter et recupérer les valeurs
-        $arrayTicket = json_decode($user->requestTicket($fileT, $idP),true);
+        $arrayTicket = json_decode($user->requestTicket($fileT, $idProjet),true);
         foreach($arrayTicket as $key => $val){
             //$key => la description du ticket  et $val les valeurs après le $key
             $tab[] = ["descTicket" => $key,
