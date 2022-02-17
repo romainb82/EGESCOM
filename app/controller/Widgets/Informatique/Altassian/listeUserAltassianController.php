@@ -138,7 +138,6 @@ class listeUserAltassianController
         echo $twig->render('/widgets/informatique/Altassian/widgetListeticket.html.twig', ['url' => 'informatique' , 'tableauTicket' => $tab, 'nameP' => $nameP]);
     }
 
-    //fonction qui affiche tous les tickets en fonction de l'id de l'utilisateur de de l'id du projet
     /**
      *==============================================================================================================
      * Affiche tous les tickets en fonction d'un utilisateur et d'un projet
@@ -176,46 +175,5 @@ class listeUserAltassianController
         $twig->addGlobal('modules', PROJECT_MODULES);
 
         echo $twig->render('/widgets/informatique/Altassian/widgetListeticketUser.html.twig', ['url' => 'informatique' , 'tableProjet' => $tab, 'nameP' => $nameP, 'nameU' => $nameU, 'idUser' => $idu]);
-    }
-
-    /**
-     *==============================================================================================================
-     * Affiche tous les tickets ayant un suivi jouranlier
-     *
-     *==============================================================================================================
-     */
-    public function ListeIssueTempo(){
-        $fileT = "https://egescom-proapro.herokuapp.com/app/public/datajson/Altassian/issueTempo.json";
-        $fileUser = "https://egescom-proapro.herokuapp.com/app/public/datajson/Altassian/searchTask.json";
-        $tab = array();
-        $tabUser = array();
-
-        $user = new listeUserAltassianManager();
-
-        $arrayUser = json_decode($user->requestUser($fileUser),true);
-        //Decodage de la requete pour pouvoir l'exploiter et recupérer les valeurs
-        $arrayTicket = json_decode($user->requestIssueTempo($fileT),true);
-        foreach($arrayTicket as $key => $val){
-            $tab[] = ["keyTicket" => $key,
-                      "dateDebut" => $val[0]["startDate"],
-                      "nameUser" => $val[0]["author"]["displayName"],
-                      "tempsPasse" => $user->requestSumTime($fileT, $key),
-                      "tempsFact" => $user->requestSumBillableTime($fileT, $key)];
-        }
-
-        foreach($arrayUser as $keyUser => $valUser){
-            //$key => le nom de l'utilisateur  et $val les valeurs après le $key
-            $tabUser[] = ["nomUser" => $keyUser,
-                          "idUser" => $valUser[0]["fields"]["customfield_10065"][0]["accountId"]];
-        }
-
-        $loader = new \Twig\Loader\FilesystemLoader(BASE_PATH_TWIG);
-        $twig = new \Twig\Environment($loader, [
-            'cache' => false,
-        ]);
-        $twig->addGlobal('session', $_SESSION);
-        $twig->addGlobal('modules', PROJECT_MODULES);
-
-        echo $twig->render('/widgets/informatique/Altassian/widgetListeIssueTempo.html.twig', ['url' => 'informatique' , 'tableTicket' => $tab, 'tableUser' => $tabUser]);
     }
 }
