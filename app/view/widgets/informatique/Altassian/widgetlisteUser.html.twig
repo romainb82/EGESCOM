@@ -46,6 +46,7 @@
                         <td>
                             {# Affichage des utilisateurs et chargement du deuxième widget quand l'utilisateur est choisi #}
                             <a href = "/app/widgets/informatique/Altassian/widgetListeProjetUtilisateur/{{ value.idU }}?nameUser={{ value.nameUser }}" target="widgetListeProjet" >{{ value.assignement }}</a>
+                        </td>
                         <td>
                             {# Condition pour savoir si le temps saisie dans JIRA eset rempli ou non #}
                             {% if value.time == 0 %}
