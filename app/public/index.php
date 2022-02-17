@@ -16,7 +16,6 @@ $dispatcher = FastRoute\simpleDispatcher(function (FastRoute\RouteCollector $r) 
     $r->addGroup('/informatique', function (FastRoute\RouteCollector $r) {
         /****** ATLASSIAN *****/
         $r->addRoute('GET', '/Altassian', 'Pap\Gescom\Controller\Informatique\Altassian\AltassianController::index');
-        $r->addRoute('GET', '/Altassian/oauth', 'Pap\Gescom\Controller\Informatique\Altassian\AltassianController::oauth');
     });
     /******** WIDGETS ***********/
     $r->addGroup('/widgets', function (FastRoute\RouteCollector $r) {
