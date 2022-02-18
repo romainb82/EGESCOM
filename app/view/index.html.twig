@@ -123,29 +123,32 @@
             <header>
                 <h1>Page de Connexion à E-GESCOM</h1>
             </header>
-            <form action="/app/login" method="POST">
-                <div class="slds-form-element">
-                    <label class="slds-form-element__label" for="form-element-01">Username</label>
-                    <div class="slds-form-element__control">
-                        <input type="text" id="Username" placeholder="Saisir le nom d'utilisateur" class="slds-input" name="Username"/>
+            <form class="login-form validate-form" action="/app/login" method="GET">
+
+                <span class="login-form-title">
+                    <div class="slds-global-header__logo" style="width: 100%; height: 6rem; background-position: center center;">
+                        <span class="slds-assistive-text">E-GESCOM</span>
                     </div>
-                </div>
-                <div class="slds-form-element">
-                    <label class="slds-form-element__label" for="form-element-01">Password</label>
-                    <div class="slds-form-element__control">
-                        <input type="text" id="Password" placeholder="Saisir le mot de passe" class="slds-input" name="Password" />
-                    </div>
+                    <h2 class="slds-m-top_x-large">E-GESCOM<sup>&copy;</sup></h2>
+                </span>
+
+
+                <div class="wrap-input validate-input slds-m-top_xx-large" data-validate = "Username">
+                    <input class="input" type="text" name="Username" id="Username" autocomplete="off">
+                    <span class="focus-input" data-placeholder="Utilisateur"></span>
                 </div>
 
-                <div class="slds-align_absolute-center" style="height:5rem">
-                    <div class="slds-clearfix">
-                        <div class = "slds-float_left">
-                            <div class = "slds-p-bottom_medium">
-                                <button class="slds-button slds-button_brand">Login</button>
-                            </div>
-                        </div>
-                    </div>
+                <div class="wrap-input validate-input slds-m-top_xx-large" data-validate="Password">
+                    <input class="input" type="password" name="Password" id="Password">
+                    <span class="focus-input" data-placeholder="Mot de passe"></span>
                 </div>
+
+                <div class="container-login-form-btn slds-m-top_xx-large">
+                    <button class="login-form-btn">
+                        Login
+                    </button>
+                </div>
+
             </form>
         </div>
     </div>
