@@ -19,25 +19,38 @@ class LoginController
 
         if ($stat === PGSQL_CONNECTION_OK) {
 
+            /*
+                        $objLoginEntity = new LoginEntity([
+                            'mail' => 'aurelien.boisselet@gmail.com',
+                        ]);
+                        $params = [
+                            "mail" => $objLoginEntity->getMail(),
+                        ];
+                        echo $params["mail"];
+            */
+
             $params = [
-                "username" =>$_GET['Username'],
-                "password" => sha1($_GET['Password'])
+                "user" => $_GET['user'],
+                "pwd" => sha1($_GET['pwd'])
             ];
 
             $result = pg_prepare($connection, "my_query", 'SELECT * FROM users WHERE name = $1 AND mdp = $2');
-            $result = pg_execute($connection, "my_query", array($params["username"], $params["password"]));
+            $result = pg_execute($connection, "my_query", array($params["user"],$params["pwd"]));
+
 
             if (!$result) {
                 echo "Une erreur est survenue.\n";
                 exit;
-            }else {
+            }else{
                 $rows = pg_num_rows($result);
-                if ($rows == 1) {
+                if($rows == 1){
                     header('Location: /app/dashboard');
-                } else {
+                }else{
                     header('Location: /');
                 }
+
             }
+
 
         } else {
             echo 'Connexion erronée';
