@@ -22,6 +22,13 @@
 
                         <div class="slds-dropdown slds-dropdown_right slds-dropdown_large">
                             <ul class="slds-dropdown__list" role="menu" aria-label="Show More">
+                                <li class="slds-dropdown__header slds-truncate" title="Menu Sub Heading" role="separator">
+                                    <span class="slds-truncate" title="Menu Item One">
+                                            <svg class="slds-icon slds-icon_x-small slds-icon-text-default slds-m-right_x-small" aria-hidden="true">
+                                              <use xlink:href="/app/public/assets/icons/utility-sprite/svg/symbols.svg#user"></use>
+                                            </svg>{{ session.name }} -- {{ session.mail }}
+                                        </span>
+                                </li>
                                 <li class="slds-has-divider_top-space" role="separator"></li>
                                 <li class="slds-p-horizontal_small slds-p-vertical_xx-small" role="presentation">
                                     <a href="/app/" role="menuitem" tabindex="-1" class="slds-button slds-button_text-destructive ">
