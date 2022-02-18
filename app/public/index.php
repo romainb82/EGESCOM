@@ -11,6 +11,7 @@ if (PROJECT_MAINTENANCE == 'TRUE'){
 
 $dispatcher = FastRoute\simpleDispatcher(function (FastRoute\RouteCollector $r) {
     $r->addRoute('GET', '/', 'Pap\Gescom\Controller\IndexController::index');
+    $r->addRoute('GET', '/login', 'Pap\Gescom\Controller\LoginController::index');
     $r->addRoute('GET', '/dashboard', 'Pap\Gescom\Controller\DashboardController::index');
     $r->addRoute('GET', '/informatique', 'Pap\Gescom\Controller\Informatique\InformatiqueController::index');
     $r->addGroup('/informatique', function (FastRoute\RouteCollector $r) {
