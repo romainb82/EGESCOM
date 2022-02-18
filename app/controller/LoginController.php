@@ -16,7 +16,8 @@ class LoginController
         $db = new ConnectionTools ;
         $connection = $db->index() or die("Connexion impossible");
         $stat = pg_connection_status($connection);
-
+        echo"coucou";
+        die();
         if ($stat === PGSQL_CONNECTION_OK) {
 
             /*
