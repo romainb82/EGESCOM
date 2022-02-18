@@ -21,10 +21,12 @@ class LoginController
 
             $params = [
                 "username" =>$_GET['Username'],
-                "password" => $_GET['Password']
+                "password" => sha1($_GET['Password'])
             ];
+
             $result = pg_prepare($connection, "my_query", 'SELECT * FROM users WHERE name = $1 AND mdp = $2');
-            $result = pg_execute($connection, "my_query", array($params["username"], sha1($params["password"])));
+            $result = pg_execute($connection, "my_query", array($params["username"], $params["password"]));
+
             if (!$result) {
                 echo "Une erreur est survenue.\n";
                 exit;
@@ -35,8 +37,6 @@ class LoginController
                 } else {
                     header('Location: /');
                 }
-                //$arr = pg_fetch_all($result);
-                //print_r($arr);
             }
 
         } else {
