@@ -5,8 +5,8 @@ namespace Pap\Gescom\Model\manager\Entity;
 class LoginEntity
 {
     private $_name;
-    private $_mail;
     private $_pwd;
+    private $_mail;
 
     public function __construct(array $tabDonnees)
     {
@@ -44,6 +44,22 @@ class LoginEntity
     /**
      * @return mixed
      */
+    public function getPwd()
+    {
+        return sha1($this->_pwd);
+    }
+
+    /**
+     * @param mixed $pwd
+     */
+    public function setPwd($pwd): void
+    {
+        $this->_pwd = $pwd;
+    }
+
+    /**
+     * @return mixed
+     */
     public function getMail()
     {
         return $this->_mail;
@@ -57,19 +73,4 @@ class LoginEntity
         $this->_mail = $mail;
     }
 
-    /**
-     * @return mixed
-     */
-    public function getPwd()
-    {
-        return sha1($this->_pwd);
-    }
-
-    /**
-     * @param mixed $pwd
-     */
-    public function setPwd($pwd): void
-    {
-        $this->_pwd = $pwd;
-    }
 }

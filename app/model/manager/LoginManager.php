@@ -28,11 +28,13 @@ class LoginManager
                 $arr['rows'] = pg_num_rows($result);
                 $arr['name'] = pg_fetch_result($result, 0, 'name');
                 $arr['mail'] = pg_fetch_result($result, 0, 'mail');
+
             }else{
                 $arr['SQL'] = true;
                 $arr['rows'] = 0;
                 $arr['message'] = 'Erreur dans la requete SQL';
             }
+
         } else {
             $arr['BDD'] = true;
             $arr['rows'] = 0;
@@ -40,7 +42,6 @@ class LoginManager
         }
 
         return $arr;
-
 
     }
 
