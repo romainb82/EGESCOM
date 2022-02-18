@@ -36,7 +36,8 @@ class LoginController
 
             $result = pg_prepare($connection, "my_query", 'SELECT * FROM users WHERE name = $1 AND mdp = $2');
             $result = pg_execute($connection, "my_query", array($params["user"],$params["pwd"]));
-
+            header('Location: /app/dashboard');
+            die();
 
             if (!$result) {
                 echo "Une erreur est survenue.\n";
