@@ -120,7 +120,9 @@
 
     <div class="container-login">
         <div class="wrap-login">
-            <h1>Page de Connexion à E-GESCOM</h1>
+            <header>
+                <h1>Page de Connexion à E-GESCOM</h1>
+            </header>
             <form action="/app/login" method="POST">
                 <div class="slds-form-element">
                     <label class="slds-form-element__label" for="form-element-01">Username</label>
@@ -136,7 +138,13 @@
                 </div>
 
                 <div class="slds-align_absolute-center" style="height:5rem">
-                    <input type="button" class="slds-button slds-button_success slds-button_stretch"  value="Login"/>
+                    <div class="slds-clearfix">
+                        <div class = "slds-float_left">
+                            <div class = "slds-p-bottom_medium">
+                                <button class="slds-button slds-button_brand">Login</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </form>
         </div>
