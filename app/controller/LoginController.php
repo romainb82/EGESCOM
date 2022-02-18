@@ -22,14 +22,20 @@ class LoginController
         $model = new LoginManager();
         $data = $model->select($params);
 
-        if($data["rows"] === 1){
-            $_SESSION['name'] = $data["name"];
-            $_SESSION['mail'] = $data["mail"];
-            header('Location: /app/dashboard');
-        }else{
+        if(isset($data["BDD"])){
             header('Location: /app/?message='.$data["message"]);
+        }else{
+            if(isset($data["SQL"])){
+                header('Location: /app/?message='.$data["message"]);
+            }else{
+                if($data["rows"] === 1){
+                    $_SESSION['name'] = $data["name"];
+                    $_SESSION['mail'] = $data["mail"];
+                    header('Location: /app/dashboard');
+                }else{
+                    header('Location: /app/?message=Utilisateur ou mot de passe invalide');
+                }
+            }
         }
-
     }
-
 }

@@ -14,17 +14,6 @@ class LoginManager
         $stat = pg_connection_status($connection);
 
         if ($stat === PGSQL_CONNECTION_OK) {
-
-            /*
-                        $objLoginEntity = new LoginEntity([
-                            'mail' => 'aurelien.boisselet@gmail.com',
-                        ]);
-                        $params = [
-                            "mail" => $objLoginEntity->getMail(),
-                        ];
-                        echo $params["mail"];
-            */
-
             $result = pg_prepare($connection, "my_query", 'SELECT * FROM users WHERE name = $1 AND pwd = $2');
             $result = pg_execute($connection, "my_query", array($params["user"],$params["pwd"]));
 
@@ -33,11 +22,12 @@ class LoginManager
                 $arr['name'] = pg_fetch_result($result, 0, 'name');
                 $arr['mail'] = pg_fetch_result($result, 0, 'mail');
             }else{
+                $arr['SQL'] = true;
                 $arr['rows'] = 0;
-                $arr['message'] = 'Pas de résultat';
+                $arr['message'] = 'Erreur dans la requete SQL';
             }
-
         } else {
+            $arr['BDD'] = true;
             $arr['rows'] = 0;
             $arr['message'] = 'Connexion impossible';
         }
