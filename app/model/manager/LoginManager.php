@@ -14,7 +14,7 @@ class LoginManager
         $stat = pg_connection_status($connection);
 
         if ($stat === PGSQL_CONNECTION_OK) {
-            $result = pg_prepare($connection, "my_query", 'SELECT * FROM users WHERE name = $1 AND pwd = $2');
+            $result = pg_prepare($connection, "my_query", 'SELECT * FROM users WHERE name = $1 AND mdp = $2');
             $result = pg_execute($connection, "my_query", array($params["user"],$params["pwd"]));
 
             if ($result) {
