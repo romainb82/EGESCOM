@@ -9,7 +9,7 @@ class LoginManager
     public function select($params)
     {
         $arr = [];
-        $db = new ConnectionTools ;
+        $db = new ConnexionTools ;
         $connection = $db->index();
         $stat = pg_connection_status($connection);
 
