@@ -2,9 +2,9 @@
 
 namespace Pap\Gescom\Controller;
 
-use Pap\Gescom\Tools\ConnectionTools;
-use Pap\Gescom\Model\Manager\LoginManager;
-use Pap\Gescom\Model\Manager\Entity\LoginEntity;
+use Pap\Gescom\tools\ConnectionTools;
+use Pap\Gescom\Model\manager\LoginManager;
+use Pap\Gescom\Model\manager\Entity\LoginEntity;
 
 
 
@@ -16,8 +16,7 @@ class LoginController
         $db = new ConnectionTools ;
         $connection = $db->index() or die("Connexion impossible");
         $stat = pg_connection_status($connection);
-        echo"coucou";
-        die();
+
         if ($stat === PGSQL_CONNECTION_OK) {
 
             /*

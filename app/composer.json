@@ -23,7 +23,7 @@
         "psr-4": {
             "Pap\\Gescom\\Model\\": "model/",
             "Pap\\Gescom\\Controller\\": "controller/",
-            "Pap\\Gescom\\Tools\\": "tools/"
+            "Pap\\Gescom\\tools\\": "tools/"
         }
     },
     "require": {
