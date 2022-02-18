@@ -6,6 +6,7 @@ class LoginEntity
 {
     private $_name;
     private $_mail;
+    private $_pwd;
 
     public function __construct(array $tabDonnees)
     {
@@ -54,5 +55,21 @@ class LoginEntity
     public function setMail($mail): void
     {
         $this->_mail = $mail;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getPwd()
+    {
+        return sha1($this->_pwd);
+    }
+
+    /**
+     * @param mixed $pwd
+     */
+    public function setPwd($pwd): void
+    {
+        $this->_pwd = $pwd;
     }
 }

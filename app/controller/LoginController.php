@@ -13,11 +13,10 @@ class LoginController
 
     public function index()
     {
-
-        $params = [
+        $params = new LoginEntity([
             "user" => $_GET['user'],
-            "pwd" => sha1($_GET['pwd'])
-        ];
+            "pwd" => $_GET['pwd']
+        ]);
 
         $model = new LoginManager();
         $data = $model->select($params);
