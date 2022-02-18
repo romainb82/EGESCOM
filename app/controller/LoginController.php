@@ -20,8 +20,8 @@ class LoginController
         if ($stat === PGSQL_CONNECTION_OK) {
 
             $params = [
-                "username" =>$_POST['Username'],
-                "password" => $_POST['Password']
+                "username" =>$_GET['Username'],
+                "password" => $_GET['Password']
             ];
             $result = pg_prepare($connection, "my_query", 'SELECT * FROM users WHERE name = $1 AND mdp = $2');
             $result = pg_execute($connection, "my_query", array($params["username"], sha1($params["password"])));
