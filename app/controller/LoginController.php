@@ -30,8 +30,8 @@ class LoginController
             */
 
             $params = [
-                "user" => $_GET['user'],
-                "pwd" => sha1($_GET['pwd'])
+                "user" => $_POST['user'],
+                "pwd" => sha1($_POST['pwd'])
             ];
 
             $result = pg_prepare($connection, "my_query", 'SELECT * FROM users WHERE name = $1 AND mdp = $2');
