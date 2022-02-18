@@ -10,18 +10,18 @@ use Pap\Gescom\Model\manager\Entity\LoginEntity;
 
 class LoginController
 {
-
     public function index()
     {
+
         $params = new LoginEntity([
-            "user" => $_GET['user'],
-            "pwd" => $_GET['pwd']
+            'name' => $_GET['user'],
+            'pwd' => $_GET['pwd']
         ]);
 
         $model = new LoginManager();
         $data = $model->select($params);
 
-        if(isset($data["BDD"])){
+        if(isset($data["BD"])){
             header('Location: /app/?message='.$data["message"]);
         }else{
             if(isset($data["SQL"])){
