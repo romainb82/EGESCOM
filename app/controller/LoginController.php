@@ -6,8 +6,6 @@ use Pap\Gescom\Tools\ConnexionTools;
 use Pap\Gescom\Model\manager\LoginManager;
 use Pap\Gescom\Model\manager\Entity\LoginEntity;
 
-
-
 class LoginController
 {
     public function index()
