@@ -29,7 +29,6 @@ class listeUserAltassianController
                       "idU" => $val[0]["fields"]["customfield_10065"][0]["accountId"],
                       "nameUser" => $val[0]["fields"]["customfield_10065"][0]["displayName"]];
         }
-
         $loader = new \Twig\Loader\FilesystemLoader(BASE_PATH_TWIG);
         $twig = new \Twig\Environment($loader, [
             'cache' => false,
