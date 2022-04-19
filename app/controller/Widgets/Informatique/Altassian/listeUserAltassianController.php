@@ -2,6 +2,7 @@
 namespace Pap\Gescom\Controller\Widgets\Informatique\Altassian;
 
 use Pap\Gescom\Model\Widgets\Manager\Informatique\Altassian\listeUserAltassianManager;
+use Pap\Gescom\Model\manager\DeveloppeurManager;
 
 class listeUserAltassianController
 {
@@ -14,10 +15,12 @@ class listeUserAltassianController
     public function index()
     {
         $fileT = "https://egescom-proapro.herokuapp.com/app/public/datajson/Altassian/searchTask.json";
-        $user = new listeUserAltassianManager();
+        $user = new DeveloppeurManager();
         //Decodage de la requete pour pouvoir l'exploiter et recupérer les valeurs
 
-        $arraytUser = json_decode($user->requestUser($fileT),true);
+        $arraytUser = $user->selectDev();
+        echo $arraytUser;
+        die();
 
         foreach($arraytUser as $key => $val){
             //$key => le nom de l'utilisateur  et $val les valeurs après le $key
